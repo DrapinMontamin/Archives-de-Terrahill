@@ -8,29 +8,34 @@
 
 
 <url>
-  <loc>https://encyclopedie-terrahill.netlify.app/</loc>
-  <lastmod>2026-05-09T18:42:58+00:00</lastmod>
+  <loc>https://drapinmontamin.github.io/Archives-de-Terrahill/</loc>
+  <lastmod>2026-05-20T14:11:14+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://encyclopedie-terrahill.netlify.app/terrahill%20-%20l'encyclop%C3%A9die</loc>
-  <lastmod>2026-05-09T18:42:58+00:00</lastmod>
+  <loc>https://drapinmontamin.github.io/Archives-de-Terrahill/html/terrahill-pantheon.html</loc>
+  <lastmod>2026-05-20T14:11:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://encyclopedie-terrahill.netlify.app/terrahill%20-%20le%20panth%C3%A9on</loc>
-  <lastmod>2026-05-09T18:42:58+00:00</lastmod>
+  <loc>https://drapinmontamin.github.io/Archives-de-Terrahill/html/terrahill-encyclopedie.html</loc>
+  <lastmod>2026-05-20T14:11:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://encyclopedie-terrahill.netlify.app/terrahill%20-%20histoire</loc>
-  <lastmod>2026-05-09T18:42:58+00:00</lastmod>
+  <loc>https://drapinmontamin.github.io/Archives-de-Terrahill/html/terrahill-histoire.html</loc>
+  <lastmod>2026-05-20T14:11:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://encyclopedie-terrahill.netlify.app/terrahill%20-%20secrets</loc>
-  <lastmod>2026-05-09T18:42:58+00:00</lastmod>
+  <loc>https://drapinmontamin.github.io/Archives-de-Terrahill/html/terrahill-secrets.html</loc>
+  <lastmod>2026-05-20T14:11:13+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://drapinmontamin.github.io/Archives-de-Terrahill/index.html</loc>
+  <lastmod>2026-05-20T14:11:13+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
