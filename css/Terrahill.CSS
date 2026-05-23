@@ -1,52 +1,63 @@
-            html{
-                background-color: rgb(255, 132, 0);
-                display: block;
-                background-image: url(../image/Taverne.jpg);
-                background-attachment: fixed;
-                background-size: cover;
-            }
-            main {
-                display: flex;
-            }
-            header{
-                text-align: center;
-                background-color: rgb(108, 58, 0);
-                color: white;
-            }
-            section {
-                background-color: rgb(255, 174, 0);
-                margin: 40px;
-            }
-            a {
-                color: black;
-            }
-            div {
-                margin: 10px;
-            }
-            .letter {
-                background-color: rgba(202, 108, 0, 0.7);
-                margin-left: 22%;
-                margin-right: 22%;
-            }
-            .gauche {
-                display: block fixed;
-                flex : 1;
-                background-color: rgba(202, 108, 0, 0.7);
-            }
-            .droite {
-                display: block;
-                text-align: left;
-                flex : 5;
-            }
-            .haut {
-                position: fixed;
-                bottom: 10px;      /* distance depuis le haut */
-                right: 20px;    /* ou left: 20px */
-                z-index: 1000;  /* pour rester au-dessus des autres éléments */
-            }
-            .menu {
-                position: fixed;
-                bottom: 40px;      /* distance depuis le haut */
-                right: 37px;    /* ou left: 20px */
-                z-index: 1000;  /* pour rester au-dessus des autres éléments */
-            }
+ html{
+     background-color: rgb(255, 132, 0);
+     display: block;
+     background-image: url(../image/Taverne.jpg);
+     background-attachment: fixed;
+     background-size: cover;
+ }
+ main {
+     display: flex;
+ }
+ header{
+     text-align: center;
+     background-color: rgb(108, 58, 0);
+     color: white;
+ }
+ section {
+     background-color: rgb(255, 174, 0);
+     margin: 40px;
+ }
+ a {
+     color: black;
+ }
+ div {
+     margin: 10px;
+ }
+ .letter {
+     background-color: rgba(202, 108, 0, 0.7);
+     margin-left: 22%;
+     margin-right: 22%;
+ }
+ .gauche {
+     display: block fixed;
+     flex : 1;
+     background-color: rgba(202, 108, 0, 0.7);
+ }
+ .droite {
+     display: block;
+     text-align: left;
+     flex : 5;
+ }
+ .haut {
+     position: fixed;
+     bottom: 10px;      /* distance depuis le haut */
+     right: 20px;    /* ou left: 20px */
+     z-index: 1000;  /* pour rester au-dessus des autres éléments */
+ }
+ .menu {
+     position: fixed;
+     bottom: 40px;      /* distance depuis le haut */
+     right: 37px;    /* ou left: 20px */
+     z-index: 1000;  /* pour rester au-dessus des autres éléments */
+ }
+ .button {
+    flex: 1;
+    background-color: rgb(108, 58, 0);
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+ }
+ .button:hover {
+    background-color: rgb(255, 162, 0);
+    color: rgb(0, 0, 0);
+ }
