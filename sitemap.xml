@@ -20,7 +20,7 @@
 <url>
   <loc>https://terrahill.fr/html/terrahill-encyclopedie.html</loc>
   <lastmod>2026-05-26T13:28:15+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>https://terrahill.fr/html/terrahill-histoire.html</loc>
@@ -30,7 +30,7 @@
 <url>
   <loc>https://terrahill.fr/html/terrahill-secrets.html</loc>
   <lastmod>2026-05-26T13:28:15+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.20</priority>
 </url>
 <url>
   <loc>https://terrahill.fr/index.html</loc>
