@@ -35,6 +35,10 @@ else if (value == "yannlegoat") {
         window.open("html/terrahill-secrets.html");
     }
 }
+else if (value == "motdepasse") {
+    alert("Révise ton lore au lieu de faire ça !!!");
+    window.location.href = "html/terrahill-histoire.html#Creation";
+}
 else if (value == "hugoatlegoat") {
     alert("Il serait bien d'arrêter les substances !")
 }
@@ -44,6 +48,9 @@ else if (value == "porno") {
     alert("CERTAIN ?")
     alert("Drébrouille toi seul gros dégueulasse !")
     window.location.href = "https://google.com";
+}
+else if (value == "terrket") {
+    window.open("html/terrahill-secrets.html");
 }
 else {
     erreur += 1;
