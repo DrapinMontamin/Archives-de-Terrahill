@@ -28,7 +28,7 @@ else if (value == "") {
 else if (value == "yannlegoat") {
     alert("Merci beaucoup frérot 😏😁 !!!")
     if (essai == 2) {
-        window.open("html/terrahill-secrets.html");
+        window.open("html/ghdfytie.html");
     }
 }
 else if (value == "motdepasse") {
@@ -46,7 +46,7 @@ else if (value == "porno") {
     window.location.href = "https://google.com";
 }
 else if (value == "terrket") {
-    window.open("html/terrahill-secrets.html");
+    window.open("html/ghdfytie.html");
 }
 else if (value == "legendes") {
     window.open("https://drapinmontamin.github.io/Legendes-de-Terrahill/")
