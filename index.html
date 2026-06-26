@@ -80,16 +80,28 @@
             <li>Dans l'Encyclopédie :
             <ul>
                 <li>Ajout des <a href="html/terrahill-encyclopedie.html#5Familles">5 Familles</a></li>
-                <li>Ajout des <a href="html/terrahill-encyclopedie.html#Eletiarrk">Eletiarrk</a></li>
-                <li>Ajout de <a href="html/terrahill-encyclopedie.html#Tiarcalaïann">Tiarcalaïann Eletiarrk</a></li>
+                <li>Ajout des <a href="html/terrahill-encyclopedie.html#Eletiarrk">Eletiarrk</a> :
+                <ul>
+                    <li>Ajout de <a href="html/terrahill-encyclopedie.html#Tiarcalaïann">Tiarcalaïann</a></li>
+                </ul></li>
                 <li>Ajout des <a href="html/terrahill-encyclopedie.html#Dennatiell">Dènnatiell</a></li>
-                <li>Ajout des <a href="html/terrahill-encyclopedie.html#Kiialimarr">Kiialimarr</a></li>
-                <li>Ajout de <a href="html/terrahill-encyclopedie.html#Ïaan">Ïaan Kiialimarr</a></li>
+                <li>Ajout des <a href="html/terrahill-encyclopedie.html#Kiialimarr">Kiialimarr</a> :
+                <ul>
+                    <li>Ajout de <a href="html/terrahill-encyclopedie.html#Ïaan">Ïaan</a></li>
+                </ul></li>                
+                <li>Ajout des <a href="html/terrahill-encyclopedie.html#Jugement">Lames du Jugement</a> :
+                <ul>
+                    <li>Ajout de <a href="html/terrahill-encyclopedie.html#Druniazth">Druniazth</a></li>
+                    <li>Ajout d'<a href="html/terrahill-encyclopedie.html#Ebelorr">Ebelorr</a></li>
+                </ul></li>                
             </ul>
             </li>
             <li>Dans le Panthéon :
             <ul>
-                <li>Modification de la <a href="html/terrahill-pantheon.html">Hiérarchie de Terrahill</a></li>
+                <li>Modification de la <a href="html/terrahill-pantheon.html#Hierarchie">Hiérarchie de Terrahill</a></li>
+                <li>Ecriture de <a href="html/terrahill-pantheon.html#Hodal">Hodal</a></li>
+                <li>Ecriture de <a href="html/terrahill-pantheon.html#Xabab">Xabab</a></li>
+                <li>Ajout et écriture de <a href="html/terrahill-pantheon.html#Decillion">Decillion</a></li>
             </ul>
             </li>
             <li>Dans l'Histoire :
@@ -99,6 +111,7 @@
             </li>
             <li>Ecriture en masse ☠️</li>
             <li>Décapitation des fautes entre L'Archipel Téhene et Le Chateau de Vannatu inclus</li>
+            <li>Mise à jour de la date de dernière mise à jour. ENFIN !!! Je ne vais plus devoir modifier manuellement la date 🤩😍 !</li>
         </ul>
         </div>
     </section>
@@ -116,11 +129,33 @@
         </div>
     </section>
     <section>
-        <h6 style="background-color: rgb(108, 58, 0);color: white; position: fixed; left: 1px;bottom: 1px;">Dernière mise à jour : Lundi 22/06/26 16:00</h6>
+        <h6 style="background-color: rgb(108, 58, 0);color: white; position: fixed; left: 1px;bottom: 1px;">Dernière mise à jour : <span id="last-update">Chargement...</span></h6>
         <h6 style="position: fixed;background-color: rgb(108, 58, 0);bottom: 1px;left: 32%;color: white;text-align: center;">© 2026 Yann Sorel--Pailhes - Terrahill. Tous droits réservés.<br>Réalisé par Yann Sorel--Pailhes avec la participation de <a href="html/terrahill-encyclopedie.html#Mathéo">Mathéo Gaignard</a>, <a href="html/terrahill-encyclopedie.html#Hugo">Hugo Vildey</a>, <a href="html/terrahill-encyclopedie.html#Thomas">Thomas Olivier</a>.</h6>
         <a href="html/ghdfytie.html" class="no" style="color: rgba(108, 58, 0, 1);text-decoration: none;background-color: white;position: fixed;bottom: 10%;left: 46%; display: None;">Les Secrets</a>
         <input type="text" id="secret" onkeydown="if (event.key == 'Enter') checkSecret()" placeholder="Archives privées" style="position: fixed;bottom: 1px;border-color: rgb(151, 81, 0);background-color: rgb(108, 58, 0);">
         <button onclick="checkSecret()" style="position: fixed;bottom: 1px;left: 200px;border-color: rgb(151, 81, 0);background-color: rgb(108, 58, 0);color: white;">Accéder</button>
     </section>
 </body>
+<script>
+    const owner = "DrapinMontamin";
+    const repo = "Archives-de-Terrahill";
+    const file = "index.html";
+
+    fetch(`https://api.github.com/repos/${owner}/${repo}/commits?path=${file}&per_page=1`)
+        .then(response => response.json())
+        .then(data => {
+            const date = new Date(data[0].commit.committer.date);
+
+            document.getElementById("last-update").textContent =
+                date.toLocaleString("fr-FR", {
+                    timeZone: "Europe/Paris",
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    second: "2-digit"
+                });
+        });
+</script>
 </html>
