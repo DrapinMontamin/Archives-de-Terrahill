@@ -1,0 +1,28 @@
+section {
+    background-color: rgba(130, 0, 0, 0.75);
+    border-radius: 10px;
+}
+p {
+    margin: 20px;
+    color: white;
+}
+a:hover {
+    background-color: brown;
+    color: black;
+}
+.gauche {
+    flex: 1;
+    background-color: green;
+    border-radius: 10px;
+    margin: 15px;
+}
+.droite {
+    flex: 5;
+    margin: 15px;
+}
+h1,h3,h4,h5,li,ol,ul,p,a {
+    color: white;
+}
+div {
+    margin: 10px;
+}

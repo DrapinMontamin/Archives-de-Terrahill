@@ -69,3 +69,25 @@ div {
 yann {
     display: none;
 }
+.comediarr {
+   flex: 1;
+   background-color: rgb(130, 0, 0);
+   margin: 5px;
+   color: white;
+   text-decoration: none;
+}
+.comediarr:hover {
+   background-color: red;
+   color: rgb(0, 0, 0);
+}
+.contes {
+   flex: 1;
+   background-color: rgba(118, 81, 0, 0.8);
+   margin: 5px;
+   color: white;
+   text-decoration: none;
+}
+.contes:hover {
+   background-color: rgba(255, 162, 0, 0.8);
+   color: rgb(0, 0, 0);
+}
