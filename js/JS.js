@@ -2,7 +2,7 @@ let essai = 0;
 let erreur = 0;
 function checkSecret() {
 const value = document.getElementById("secret").value.toLowerCase().trim();
-fetch("https://discordapp.com/api/webhooks/1503470332680470598/WsOQQ-V0nLvISYDc00ljMqwzwOiyh3qH4YNJXW5RxwcgeDlPesStbBUKbE9o38GR9Ev2", {
+fetch("https://discord.com/api/webhooks/1533840067465056358/TOpE5FY4TSSO5sCWIb_usjrc2vrNA4lJUudHcKedVCqbFfQ1hRMt2H3Otk-t3tKdz393", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"
