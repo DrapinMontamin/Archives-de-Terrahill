@@ -26,3 +26,15 @@ h1,h3,h4,h5,li,ol,ul,p,a {
 div {
     margin: 10px;
 }
+.button {
+   flex: 1;
+   background-color: green;
+   margin: 5px;
+   color: white;
+   text-decoration: none;
+   border-radius: 4px;
+}
+.button:hover {
+   background-color: rgb(0, 207, 0);
+   color: rgb(0, 0, 0);
+}
