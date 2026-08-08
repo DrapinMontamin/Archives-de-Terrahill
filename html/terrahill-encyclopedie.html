@@ -6,6 +6,20 @@
         <link rel="icon" type="image/png" href="../image/Taverne.png">
         <link href="../css/Terrahill.CSS" rel="stylesheet">
         <script src="../js/Terrahill.js" defer></script>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 5px;
+            }
+            th, td {
+                padding: 10px;
+                border: 2px solid rgb(108, 58, 0);
+            }
+            th {
+                font-weight: bold;
+            }
+        </style>
 	</head>
 	<body>
         <header>
@@ -75,6 +89,7 @@
                 <li><a href="#Baliorhill">Baliorhill</a></li>
                 <li><a href="#Basilic"  >Basilic</a></li>
                 <li><a href="#Balague"  >Balague le déchu</a></li>
+                <li><a href="#Banque">La Banque Générale</a></li>
                 <li><a href="#Belhorne"  >Belhorne</a></li>
                 <li><a href="#Bretonn"  >Bretonn</a></li>
                 <li><a href="#Brasdor"  >Brasdor Tidulme</a></li>
@@ -86,8 +101,8 @@
                 <li><a href="#Chaadar">Chaadar</a></li>
                 <li><a href="#Cité_sous-marine"  >Cité sous-marine</a></li>
                 <li><a href="#Conseil_des_4_terres"  >Le Conseil des 4 Terres</a></li>
+                <li><a href="#Dodo_compagnie">La Compagnie Somnolante</a></li>
                 <li><a href="#ChateauV">Chateau de Vannatu</a></li>
-                <li><a href="#Cité_sous-marine">Cité sous-marine</a></li>
                 <li><a href="#Couronne"  >Couronne</a></li>
                 <li><a href="#Continent">Continent de Terrahill</a></li>
                 <li><a href="#Confrerie_Noire">Confrérie Noire</a></li>
@@ -103,6 +118,7 @@
                 <li><a href="#De_Ehrn"  >Les De Ehrn</a></li>
                 <li><a href="#Dennatiell">Les Dènnatiell</a></li>
                 <li><a href="#Naheulbeuk"  >Donjon de Naheulbeuk</a></li>
+                <li><a href="#Doleïonn">Les Doleïonn</a></li>
                 <li><a href="#Dralehinn"  >Dralehinn</a></li>
                 <li><a href="#Drapin"  >Drapin Montamin</a></li>
                 <li><a href="#Druniazth">Druniazth</a></li>
@@ -112,6 +128,7 @@
                 <li><a href="#Ebelorr">Ebelorr</a></li>
                 <li><a href="#Edgar">Edgar Amanodel</a></li>
                 <li><a href="#Eletiarrk">Les Eletiarrk</a></li>
+                <li><a href="#Elinndiel">Elinndiel Doleïonn</a></li>
                 <li><a href="#Ereb'hus">Ereb'hus</a></li>
                 <li><a href="#Ehrn"  >Ehrn</a></li>
                 <li><a href="#Elnnorhill">Elnnorhill</a></li>
@@ -131,6 +148,7 @@
                 <li><a href="#FrontdeL">Front de libération</a></li>
             </ul>
             <ul id="g">- G :
+                <li><a href="#Gaëtan">Gaëtan Sorel</a></li>
                 <li><a href="#Grand_conservatoire"  >Grand Conservatoire</a></li>
                 <li><a href="#Gremnyr">Gremnyr le Paisible</a></li>
                 <li><a href="#Galastacie"  >Les Galastacie</a></li>
@@ -138,12 +156,12 @@
             <ul id="h">- H :
                 <li><a href="#Hatt">Hatt</a></li>
                 <li><a href="#Hugo">Hugo Vildey</a></li>
-                <li><a href="#Hodal">Mont Hodal</a></li>
                 <li><a href="#Hornet">Hornet Silksong</a></li>
                 <li><a href="#Honne">Honne</a></li>
             </ul>
             <ul id="i">- I :
                 <li><a href="#Ïaan">Ïaan Kiialimarr</a></li>
+                <li><a href="#Ibraxann">Ibraxann Doleïonn</a></li>
                 <li>Iris <a href="#Iris"  >Montamin</a> / <a href="#Iris2"  >Nylienn</a></li>
                 <li><a href="#Ilian"  >Ilian l'occultiste</a></li>
                 <li><a href="#Zberg">Îles fortifiés de Zberg</a></li>
@@ -176,7 +194,7 @@
             </ul>
             <ul id="m">- M :
                 <li><a href="#Maisons_saphir">Maisons Saphir</a></li>
-                <li><a href="#Gaëtan">Gaëtan Sorel</a></li>
+                <li><a href="#Moineaux">Les Moineaux</a></li>
                 <li><a href="#Montamin">Les Montamin</a></li>
                 <li><a href="#MoniqueP">Monique Pailhes</a></li>
                 <li><a href="#Morléïn">Les Morléïn</a></li>
@@ -202,7 +220,8 @@
                 <li><a href="#Nauru">Nauru (L'île)</a></li>
             </ul>
             <ul id="o">- O :
-                <li><a href="#Oglion"  >Oglion</a></li>
+                <li><a href="#Oeil">L'Oeil</a></li>
+                <li><a href="#Oglion">Oglion</a></li>
                 <li><a href="#Orn">Orn</a></li>
                 <li><a href="#Orphelinat">Orphelinat (<a href="#Mérehatt"  >Mérehatt</a>)</a></li>
                 <li><a href="#Oswald">Oswald</a></li>
@@ -286,12 +305,65 @@
                 <li><a href="#Drogue">Yarnis</a></li>
             </ul>
             <ul id="z">- Z :
-                <li><a href="#Zeleth">Zeleth Blanc-pain</a></li>
+                <li><a href="#Zeleth">Zeleth Blanc-pain</a> (<a href="#Terrkion">Terrkion Demetrian</a>)</li>
                 <li><a href="#Zenitsu">Zenitsu</a></li>
                 <li><a href="#Zoé">Zoé Doigt d'Orage</a></li>
             </ul>
         </nav>
         <nav class="droite">
+        <section>
+            <div>
+                <h3><u>Conversion de l'argent de Terrahill</u></h3>
+                <p>Chaque pièce, quelque soit le métal, a une masse de 10 g environ.</p>
+                <table>
+                    <tr>
+                        <th>Argent dans Terrahill</th>
+                        <th>Equivalent en Pièce d'or (PO)</th>
+                        <th>Equivalent en Euro €</th>
+                    </tr>
+                    <tr>
+                        <td>1 Pièce de cuivre (PC)</td>
+                        <td>0.001 PO</td>
+                        <td>0,10 €</td>
+                    </tr>
+                    <tr>
+                        <td>1 Pièce d'argent (PA)</td>
+                        <td>0.01 PO</td>
+                        <td>1 €</td>
+                    </tr>
+                    <tr>
+                        <td>1 Pièce de bronze (PB)</td>
+                        <td>0.1 PO</td>
+                        <td>10 €</td>
+                    </tr>
+                    <tr>
+                        <td>1 Pièce d'or (PO)</td>
+                        <td>1 PO</td>
+                        <td>100 €</td>
+                    </tr>
+                    <tr>
+                        <td>10 PO ou 1 Pièce d'électrum (PE)</td>
+                        <td>10 PO</td>
+                        <td>1.000 €</td>
+                    </tr>
+                    <tr>
+                        <td>100 PO</td>
+                        <td>100 PO</td>
+                        <td>10.000 €</td>
+                    </tr>
+                    <tr>
+                        <td>1.000 PO</td>
+                        <td>1.000 PO</td>
+                        <td>100.000 €</td>
+                    </tr>
+                    <tr>
+                        <td>1 Pièce d'acier noir (PAN)</td>
+                        <td>2.410.000.000 PO</td>
+                        <td>241.000.000.000 € (241 milliards €)</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
         <span id="Lieux"></span>
         <section id="Terrahill" style="background-color: rgb(255, 199, 80);">
             <div>
@@ -1251,42 +1323,45 @@
                     <p></p>
                 </div>
             </div>
-            <div id="Fondateurs">
-                <h5><u>Les Fondateurs</u></h5>
-                <p>
-                    Les Fondateurs ne sont pas réellement une famille, c'est un groupe de 4 personnes à l'origine de la fondation de Terrahill lui-même. Ce sont les célèbres combattants
-                    de <a href="terrahill-histoire.html#Chaos">l'ère du Chaos</a>, les héros prodigieux. Chacun d'eux a participer à la chute de <a href="terrahill-pantheon.html#Tharizdunn">Tharizdunn</a>.
-                </p>
-                <div id="Vaelor">
-                    <h5>Vaelor Sorel, le mage du sceau</h5>
+            <div id="Doleïonn">
+                <h5><u>Les Doleïonn</u></h5>
+                <div id="Ibraxann">
+                    <h5><u>Ibraxann Doleïonn, dit "Le Nécromancien aigri"</u></h5>
                     <p>
-                        Vaelor, le mage du sceau, est le fameux magicien ayant scéllé <a href="terrahill-pantheon.html#Tharizdunn">Tharizdunn</a> dans la Ziggourat sacrée de <a href="#Kiirbold">Kiirbold</a>
-                        , il est le frère de <a href="#Vaelis">Vaelis, la négociante divine</a>. Il a combattu aux côtés de <a href="#Terrkion">Terrkion, le héros de légende</a>, durant son combat contre <a href="terrahill-pantheon.html#Tharizdunn">Tharizdunn</a>
-                        avant de le scéller.
+                        Ibraxann est un expert en biologie. Il suffit de cette phrase pour le connaître. En effet, Ibraxann Doleïonn, le seul et unique membre de sa famille,
+                        est un grand biologiste. Il est d'ailleurs le plus grand des biologiste. Son intellect est tel qu'il remet les lois de la magie en question et qu'il
+                        arrive à prouver qu'il a raison. Il a réussi à de nombreuses reprises à créer des êtres vivants avec une conscience et une intelligence tel que ses créations
+                        n'ont rien a envier aux êtres nés des relations charnelles. Son plus grand chef-d'oeuvre est <a href="#Elinndiel">Elinndiel</a>, une femme qu'il a entièrement créé
+                        sans magie, comme toute ses autres créations certes, mais elle reste l'être le plus réussi qu'il ai créé de toute pièce. Il s'est notamment marié avec elle, et même
+                        si cela peut sembler être une union étrange, rappelons qu'Elinndiel a une conscience et des sentiments que Ibraxann ne peut contrôler, leur amour est réel.
+                        Ibraxann est connu surtout pour sa découverte de la particule thaumaturgico-extradimensionnelle de résonance hyperquantique à interaction axiomatique non-locale,
+                        plus communément appelée Thaumion, la particule à l'origine de la magie.
+                        <br><br>P.S. : Il faut savoir que le nom d'origine d'Ibraxann était Raxann Doleïonn, mais comme il ne sait pas s'il est l'un de ses clone, il s'est renommé
+                        IB Raxann (Ibraxann) ce qui signifie Intelligence Biologique Raxann.
+                    </p>
+                    <p>
+                        <b><u><i>Petite explication de l'existence par Ibraxann :</i></u></b>
+                    </p>
+                    <p>
+                        Les gueux pensent que les âmes sont des choses surnaturelles et exceptionnelles, que c'est un cadeau de la nature.
+                        Je vais alors vous expliquer comment elles fonctionnent réellement, cela va être bref, vous allez voir, c'est très simple.
+                        L'âme est présente uniquement au moment de la mort et jusqu'à résurrection, si celle-ci a lieu. A votre mort, un mécanisme
+                        magico-biologique sans lien avec la TM a lieu. Les particules de votre cerveau se transforme en
+                        particule thaumaturgico-extradimensionnelle de résonance hyperquantique à interaction axiomatique non-locale, la Thaumion.
+                        Pour ensuite rejoindre le plan correspondant à son alignement. S'il devait y avoir réincarnation ou résurrection, l'âme reviendrai à l'emplacement
+                        du nouveau corps ou du corps anciennement décédé, selon le rituel employé, et les cellules redeviendraient celles d'origine.
+                        L'inconvéniant de la réincarnation et de la résurrection est que le cerveau du réincarné ou ressucité est très modelable à ce moment.
+                        <br><br>Et d'ailleurs, je suis biologiste, pas nécromancien. Par contre, je ne vous le retire pas, je suis bel et bien aigri.
+
                     </p>
                 </div>
-                <div id="Terrkion2">
-                    <h5>Terrkion Demetrian, le héros de légende</h5>
+                <div id="Elinndiel">
+                    <h5><u>Elinndiel Doleïonn (de "mariage")</u></h5>
                     <p>
-                        Terrkion, le héros de légende, est le plus grand guerrier de l'ère du Chaos. Il a, à lui seul, tenu tête à <a href="terrahill-pantheon.html#Tharizdunn">Tharizdunn</a> pendant plusieurs heures de combat
-                        sauvage avant d'enfin parvenir à le vaincre. Pour arriver à une telle puissance, le héros de légende a combattu de nombreux monstres et créatures atteint par la 
-                        folie de <a href="terrahill-pantheon.html#Tharizdunn">Tharizdunn</a>. C'est un guerrier que l'histoire n'oubliera jamais. Il a malheureusement disparu peu de temps après avoir fonder la <a href="#Bretonn">Bretonn</a> avec <a href="">Vaelis Sorel</a>
-                    </p>
-                </div>
-                <div id="Vaelis">
-                    <h5>Vaelis Sorel, la négociante divine</h5>
-                    <p>
-                        Vaelis, la négociante divine, est la soeur de <a href="#Vaelor">Vaelor, le mage du sceau</a>. C'est grâce à elle que les autres dieux ont aidé les peuples mortels encore sain d'esprit.
-                        Elle s'est tuée pour rejoindre les dieux sur les plans exterieurs et leur parler. C'est également elle qui a réussi à convaincre le <a href="terrahill-pantheon.html#Master">Maître des mondes</a>
-                         de banir le plan matériel de <a href="#Kiirbold">Kiirbold</a> et d'en créer un nouveau pour les peuples sains d'esprit. Elle reviendra à la vie par l'aide des dieux et finira par se marier à <a href="#Terrkion">Terrkion Demetrian</a>.
-                        Elle l'aidera à fonder le Royaume de <a href="#Bretonn">Bretonn</a> avant sa disparition.
-                    </p>
-                </div>
-                <div id="Auriel">
-                    <h5>Auriel Dènnatiell, Princesse du Dènnlann et Générale des armées royales de Dènneion, dit "le bouclier des peuples"</h5>
-                    <p>
-                        Auriel, le bouclier des peuples, est l'héroïne du peuple sain d'esprit, c'est elle qui a protégé les villages et populations saines d'esprit face aux créatures folles de <a href="terrahill-pantheon.html#Tharizdunn">Tharizdunn</a>.
-                        Elle a continué sa bataille durant la <a href="terrahill-histoire.html#Aube">Guerre de l'Aube</a> en tant que cheffe de guerre avec Terrkion face aux derniers fous souhaitant sauver <a href="terrahill-pantheon.html#Tharizdunn">Tharizdunn</a>.
+                        Elinndiel est une femme créé de toute pièce par <a href="#Ibraxann">Ibraxann</a>. Elle possède néanmoins une âme, une conscience et des émotions réelles qu'<a href="#Ibraxann">Ibraxann</a>
+                        ne peut pas contrôler. A sa création, <a href="#Ibraxann">Ibraxann</a> lui a donné une quantité de Thaumion équivalente à celle d'un humain, elle peut donc pratiquer la magie malgré le fait qu'elle soit considérée
+                        comme un être artificiel. Bien que le terme "être artificiel" ne plais pas vraiment à <a href="#Ibraxann">Ibraxann</a> qui préfère appeler ses créations les "Intelligences Biologiques"
+                        en opposition aux "Intelligences Artificielles" présentent dans les créatures de type artificiel.
                     </p>
                 </div>
             </div>
@@ -1406,7 +1481,7 @@
                           <a href="#Alston">Alston</a> tentant de calmer Fley pendant plusieurs années. Ils finirent par réussir à devenir de grands mages et à rentrer dans le conseil des dix de Lihènn.
                           <br>Aujourd'hui, Fley a 65 ans et il déteste toujours autant <a href="#Feïnn">Feïnn</a> mais il est moins impulsif qu'à l'époque, il dirige toujours Lihènn avec <a href="#Alston">Alston</a> et les autres mages.
                           Il y a peu, tout deux ont décider de s'opposer à la loi anti-magie du gouvernement pour garder le pouvoir, et ont rejoins le <a href="#FrontdeL">front de libération</a> de <a href="#Belhorne">Belhorne</a>,
-                          en prenant contact avec <a href="#Elianis">Elianis Glastacie</a> et <a href="#Zeleth">Zeleth Blanc-pain</a>.
+                          en prenant contact avec <a href="#Elianis">Elianis Glastacie</a> et <a href="#Zeleth">Zeleth Blanc-pain</a> (<a href="#Terrkion">Terrkion Demetrian</a>).
                     </p>
                 </div>
             </div>
@@ -1427,7 +1502,7 @@
             <div id="Blanc-pain">
                 <h5><u>Les Blanc-pain</u></h5>
                 <div id="Zeleth">
-                    <h5>Zeleth Blanc-pain</h5>
+                    <h5>Zeleth Blanc-pain (<a href="#Terrkion">Terrkion Demetrian</a>)</h5>
                     <p>Zeleth est né dans la forêt des druides dans le village des druides. Il n'a jamais connu ses parents mais a été adopté par un couple, son père adoptif est le chef du village. 
                         Il est devenu commerçant et a fini par acheter la forêt des druides pour l'exploiter sans l'accord de ceux-ci. Il a été banni pour cela et a donc décidé de monter son commerce 
                         dans différents lieu. Son commerce est dans un demi-plan, des portes sont situés dans toutes les capitale de Terrahill pour y accéder et il possède même une porte itinérairantes 
@@ -1548,19 +1623,43 @@
             </div>
             <div id="Armee_bretonnie">
                 <h5><u>L'Armée de Bretonn</u></h5>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> <a href="#Titus">L'Archange</a>
+                    <br><b>Echelle :</b> Nationale (Bretonn)
+                    <br><b>Trésorie estimée :</b> <i>à déterminer</i>
+                </p>
                 <p>
                     
                 </p>
             </div>
+            <div id="Banque">
+                <h5><u>La Banque Générale</u></h5>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> Bedildonn
+                    <br><b>Echelle :</b> Universelle
+                    <br><b>Trésorie estimée :</b> 23.600.000.000 PO
+                </p>
+                <p></p>
+            </div>
             <div id="Confrerie_Noire">
                 <h5><u>La Confrérie Noire</u></h5>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> Harvold
+                    <br><b>Echelle :</b> Bi-continentale (Kiir-Terrahill et l'Archipel aux Saphirs)
+                    <br><b>Trésorie estimée :</b> 9.250.000 PO
+                </p>
                 <p>
-                    Nous n'avons aucune information sur la Confrérie Noire dans les Archives publiques, si ce n'est qu'ils sont les concurrents principaux des <a href="#Sans-visage">Sans visage</a>. Il semblerait que les informations à leur sujet soient 
-                    confidentielles et dangereuses à dévoiler. Nous ne sommes en mesure que de dire qu'ils agissent sur <a href="#Continent">Kiir-Terrahill</a>.
+                    Nous n'avons aucune information supplémentaire sur la Confrérie Noire dans les Archives publiques, si ce n'est qu'ils sont les concurrents principaux des <a href="#Sans-visage">Sans visage</a>. Il semblerait que les informations à leur sujet soient 
+                    confidentielles et dangereuses à dévoiler. Nous ne sommes en mesure que de dire qu'ils agissent sur <a href="#Continent">Kiir-Terrahill</a> et une partie de <a href="#Archipel_Saphirs">l'Archipel aux Saphirs</a>.
                 </p>
             </div>
             <div id="Confrerie_Rouge">
                 <h5><u>La Confrérie Rouge</u></h5>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> Arkhélion "La Braise"
+                    <br><b>Echelle :</b> Semi-continentale (TerraTarcyss Ouest)
+                    <br><b>Trésorie estimée :</b> 870.000 PO
+                </p>
                 <p>
                     Ecrits de propagande retrouvés sur des murs des Royaumes de <a href="#Trenoèmm">Trenoèmm</a> et de <a href="#Valdris">Valdris</a> :
                 </p>
@@ -1579,17 +1678,45 @@
             </div>
             <div id="Confrerie_Tavernes">
                 <h5><u>La Confrérie des Tavernes</u></h5>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> <a href="#Drapin">Drapin Montamin</a>
+                    <br><b>Echelle :</b> Continentale (Kiir-Terrahill)
+                    <br><b>Trésorie estimée :</b> 8.010.000 PO
+                </p>
                 <p>
                     La Confrérie des Tavernes et un rassemblement de Taverniers qui organisent des grandes fêtes et qui échangent des produits qu'ils vendent dans leurs tavernes.
                     Le chef actuel de cette Confrérie est <a href="#Drapin">Drapin Montamin</a>, elle ne regroupe, donc, que des tavernes de <a href="#Continent">Kiir-Terrahill</a>.
                 </p>
             </div>
+            <div id="Dodo_compagnie">
+                <h5><u>La Compagnie Somnolante</u></h5>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> D
+                    <br><b>Echelle :</b> Continentale (TerraEletiarrk)
+                    <br><b>Trésorie estimée :</b> 54.300.000 PO
+                </p>
+                <p>
+
+                </p>
+            </div>
             <div id="Cercle">
                 <h5><u>Le Cercle</u></h5>
-                <p></p>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> <i>à déterminer</i>
+                    <br><b>Echelle :</b> Mondiale (Terrahill)
+                    <br><b>Trésorie estimée :</b> 1780 PO
+                </p>
+                <p>
+
+                </p>
             </div>
             <div id="Createurs">
                 <h5><u>Les Créateurs (aussi nommés les Trois)</u></h5>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> <a href="terrahill-pantheon.html#Master">Elinnior</a>
+                    <br><b>Echelle :</b> Universelle
+                    <br><b>Trésorie estimée :</b> ???
+                </p>
                 <p>
                     Les Créateurs sont les plus fidèles disciple du Maitre des Mondes. Ils sont les yeux et les oreilles du Maître des mondes et parcours les continents pour trouver des anomalies.
                     Les Créateurs ont été créés après la Guerre de l'Aube dans le but d'éviter que cela se reproduise.
@@ -1600,28 +1727,95 @@
                     <li>Le Traarr-Hill (Troisième Maître) : <a href="#Baliorhill">Baliorhill</a>;</li>
                 </ul>
             </div>
+            <div id="Fondateurs">
+                <h5><u>Les Fondateurs</u></h5>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> <a href="#Terrkion">Terrkion Demetrian</a>
+                    <br><b>Echelle :</b> Mondiale (Kiirbold)
+                    <br><b>Epoque :</b> 927 à 1006 après la Création
+                </p>
+                <p>
+                    Les Fondateurs sont un groupe de 4 personnes à l'origine de la fondation de Terrahill lui-même. Ce sont les célèbres combattants
+                    de <a href="terrahill-histoire.html#Chaos">l'ère du Chaos</a>, les héros prodigieux. Chacun d'eux a participer à la chute de <a href="terrahill-pantheon.html#Tharizdunn">Tharizdunn</a>.
+                </p>
+                <div id="Vaelor">
+                    <h5>Vaelor Sorel, le mage du sceau</h5>
+                    <p>
+                        Vaelor, le mage du sceau, est le fameux magicien ayant scéllé <a href="terrahill-pantheon.html#Tharizdunn">Tharizdunn</a> dans la Ziggourat sacrée de <a href="#Kiirbold">Kiirbold</a>
+                        , il est le frère de <a href="#Vaelis">Vaelis, la négociante divine</a>. Il a combattu aux côtés de <a href="#Terrkion">Terrkion, le héros de légende</a>, durant son combat contre <a href="terrahill-pantheon.html#Tharizdunn">Tharizdunn</a>
+                        avant de le scéller.
+                    </p>
+                </div>
+                <div id="Terrkion2">
+                    <h5>Terrkion Demetrian, le héros de légende</h5>
+                    <p>
+                        Terrkion, le héros de légende, est le plus grand guerrier de l'ère du Chaos. Il a, à lui seul, tenu tête à <a href="terrahill-pantheon.html#Tharizdunn">Tharizdunn</a> pendant plusieurs heures de combat
+                        sauvage avant d'enfin parvenir à le vaincre. Pour arriver à une telle puissance, le héros de légende a combattu de nombreux monstres et créatures atteint par la 
+                        folie de <a href="terrahill-pantheon.html#Tharizdunn">Tharizdunn</a>. C'est un guerrier que l'histoire n'oubliera jamais. Il a malheureusement disparu peu de temps après avoir fonder la <a href="#Bretonn">Bretonn</a> avec <a href="">Vaelis Sorel</a>
+                    </p>
+                </div>
+                <div id="Vaelis">
+                    <h5>Vaelis Sorel, la négociante divine</h5>
+                    <p>
+                        Vaelis, la négociante divine, est la soeur de <a href="#Vaelor">Vaelor, le mage du sceau</a>. C'est grâce à elle que les autres dieux ont aidé les peuples mortels encore sain d'esprit.
+                        Elle s'est tuée pour rejoindre les dieux sur les plans exterieurs et leur parler. C'est également elle qui a réussi à convaincre le <a href="terrahill-pantheon.html#Master">Maître des mondes</a>
+                         de banir le plan matériel de <a href="#Kiirbold">Kiirbold</a> et d'en créer un nouveau pour les peuples sains d'esprit. Elle reviendra à la vie par l'aide des dieux et finira par se marier à <a href="#Terrkion">Terrkion Demetrian</a>.
+                        Elle l'aidera à fonder le Royaume de <a href="#Bretonn">Bretonn</a> avant sa disparition.
+                    </p>
+                </div>
+                <div id="Auriel">
+                    <h5>Auriel Dènnatiell, Princesse du Dènnlann et Générale des armées royales de Dènneion, dit "le bouclier des peuples"</h5>
+                    <p>
+                        Auriel, le bouclier des peuples, est l'héroïne du peuple sain d'esprit, c'est elle qui a protégé les villages et populations saines d'esprit face aux créatures folles de <a href="terrahill-pantheon.html#Tharizdunn">Tharizdunn</a>.
+                        Elle a continué sa bataille durant la <a href="terrahill-histoire.html#Aube">Guerre de l'Aube</a> en tant que cheffe de guerre avec Terrkion face aux derniers fous souhaitant sauver <a href="terrahill-pantheon.html#Tharizdunn">Tharizdunn</a>.
+                    </p>
+                </div>
+            </div>
             <div id="Guilde">
                 <h5><u>La Guilde des Aventuriers</u></h5>
-                <p></p>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> <i>à déterminer</i>
+                    <br><b>Echelle :</b> Bi-mondiale (Terrahill et Kiirbold)
+                    <br><b>Trésorie estimée :</b> 29.600.000 PO
+                </p>
+                <p>
+
+                </p>
+            </div>
+            <div id="Moineaux">
+                <h5><u>Les Moineaux</u></h5>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> <a href="#Elianis">Elianis Galastacie</a>
+                    <br><b>Dirigeant précédent :</b> <a href="#Zeleth">Zeleth Blanc-pain</a> (<a href="#Terrkion">Terrkion Demetrian</a>)
+                    <br><b>Echelle :</b> Tri-continentale (Kiir-Terrahill, TerraTarcyss et TerraIldaqq)
+                    <br><b>Trésorie estimée :</b> 56.100 PO
+                </p>
+                <p>
+                    Les Moineaux sont des bardes utilisant leur réseau et leur influence pour faire courir des rumeurs et pour espionner.
+                </p>
             </div>
             <div id="Sans-visage">
                 <h5><u>Les Sans-visage</u></h5>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> <a href="#Quarion">Quarion Amanodel</a> et Tharion (sous-chef)
+                    <br><b>Echelle :</b> Quadri-continentale (Kiir-Terrahill, Ile de l'Inquisition, les Jumeaux et TerraTarcyss)
+                    <br><b>Trésorie estimée :</b> 36.700.000 PO
+                </p>
                 <p>
-                    <i>"Ces hommes sont tout le monde et personne à la fois. Leur seul maître est le <a href="#Quarion">Maître Multiface (Quarion)</a>, ou peut-être pas. Ces hommes sont des espions, ou peut-être pas. Ces hommes sont de assassins, ou peut-être pas.
+                    <i>"Ces hommes sont tout le monde et personne à la fois. Leur seul maître est le <a href="#Quarion">Maître Multiface et Dieu aux mille visages, Quarion</a>, ou peut-être pas. Ces hommes sont des espions, ou peut-être pas. Ces hommes sont de assassins, ou peut-être pas.
                     Ces hommes savent, ils savent ce que vous ne savez pas. Ces hommes sont le plus grand réseau d'informations de Terrahill et l'autre monde, ou alors ces hommes ne sont simplement personne. Lorsqu'un sans visage est recruté, il subit un rite,
                     ou peut-être pas. Un rite que l'un de vous a vécu, ou peut-être pas. Ensuite, ces hommes peuvent vivre des vies normales et répondre aux missions du maître, ou peut-être pas."</i>
                     <br><br>Les livres des archives publiques parlant des sans visage ont tous disparus. Il ne restait que ce mot.
                     <br><br><i>Ou peut-être pas.</i>
                 </p>
             </div>
-            <div id="Conseil2">
-                <h5><u>Le Second Conseil</u></h5>
-                <p>
-
-                </p>
-            </div>
             <div id="Araignée">
                 <h5><u>L'Araignée</u></h5>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> <i>à déterminer</i>
+                    <br><b>Echelle :</b> Régionale (Mérehatt Nord-Ouest)
+                    <br><b>Trésorie estimée :</b> 1.350 PO
+                </p>
                 <p>
                     L'Araignée est une organisation de voleurs. Leur but est simple, voler, piller, arnaquer, se faire de l'argent par tout les moyens. Le chef a été tué il y a peu par <a href="#Zenitsu">Zenitsu</a> et un magicien qui en est mort.
                     L'Araignée agit aux alentours du petit village de <a href="#Ehrn">Ehrn</a>.
@@ -1629,12 +1823,22 @@
             </div>
             <div id="FrontdeL">
                 <h5><u>Le Front de libération</u></h5>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> <a href="#Elianis">Elianis Galastacie</a>
+                    <br><b>Echelle :</b> Nationale (Lihènn)
+                    <br><b>Trésorie estimée :</b> 13.900 PO
+                </p>
                 <p>
-                    Le Front de libération agit à <a href="#Lihènn">Lihènn</a> et a pour but de faire autoriser la magie de nouveau dans le pays. Sont QG se trouve dans la ville de <a href="#Belhorne">Belhorne</a> où <a href="#Elianis">Elianis Galastacie</a> mène les activités du Front. <a href="#Zeleth">Zeleth Blanc-pain</a>, <a href="#Alston">Alston Montamin</a> et <a href="#Fley">Fley l'ensorceleur</a> sont d'importants membres du Front. Ces deux derniers ont réalisé il y a peu que la magie ne devait pas être interdite, notamment grâce à <a href="#Zeleth">Zeleth</a> lors de la descente. Leurs statuts de Grands mages de Lihènn va aider le Front dans ses manoeuvres.
+                    Le Front de libération agit à <a href="#Lihènn">Lihènn</a> et a pour but de faire autoriser la magie de nouveau dans le pays. Sont QG se trouve dans la ville de <a href="#Belhorne">Belhorne</a> où <a href="#Elianis">Elianis Galastacie</a> mène les activités du Front. <a href="#Zeleth">Zeleth Blanc-pain</a> (<a href="#Terrkion">Terrkion Demetrian</a>), <a href="#Alston">Alston Montamin</a> et <a href="#Fley">Fley l'ensorceleur</a> sont d'importants membres du Front. Ces deux derniers ont réalisé il y a peu que la magie ne devait pas être interdite, notamment grâce à <a href="#Zeleth">Zeleth</a> lors de la descente. Leurs statuts de Grands mages de Lihènn va aider le Front dans ses manoeuvres.
                 </p>
             </div>
             <div id="Kharadron">
                 <h5><u>Le Kharadron, chef des navires morts</u></h5>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> <a href="#Edgar">Edgar Amanodel</a>
+                    <br><b>Echelle :</b> Regionale (L'Ile de la Tombe noire (Palann Sud))
+                    <br><b>Trésorie estimée :</b> 2.430 PO
+                </p>
                 <div style="display: flex;">
                     <img src="../image/logo Kharadron.png" alt="Le logo du Kharadron" style="width: 100px; margin-right: 25px;" class="gauche">
                     <p class="droite" style="margin-left: 25px;">
@@ -1646,24 +1850,48 @@
             </div>
             <div id="MiliceC">
                 <h5><u>La Milice du Conseil</u></h5>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> Famille <a href="#Montamin">Montamin</a>
+                    <br><b>Echelle :</b> Régionale (Le Conseil des 4 Terres)
+                </p>
                 <p>
-
+                    
                 </p>
             </div>
             <div id="MiliceC2">
                 <h5><u>La Milice du Conservatoire</u></h5>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> Les Grands Erudits de Mérehatt et la Famille <a href="#Nylienn">Nylienn</a>
+                    <br><b>Echelle :</b> Régionale (Le Grand Conservatoire de Mérehatt)
+                </p>
                 <p>
                     
                 </p>
             </div>
             <div id="MiliceD">
                 <h5><u>La Milice de Dahrr</u></h5>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> <a href="#Drapin">Drapin Montamin</a> et <a href="#Thomas">Thomas Olivier</a>
+                    <br><b>Echelle :</b> Nationale (Dralehinn)
+                </p>
                 <p>
                     
                 </p>
             </div>
+            <div id="Oeil">
+                <h5><u>L'Oeil</u></h5>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> <i>dirigeant inconnu</i>
+                    <br><b>Echelle :</b> Universelle
+                    <br><b>Trésorie estimée :</b> <i>aucune estimation réalisée</i> <yann>23.746.506.100 PO pour l'instant</yann>
+                </p>
+                <p>
+                    Nous ne possèdons pas d'information sur l'Oeil mise à part le fait que cette organisation semble avoir le respect de la plupart des organisations d'espions et d'assassins au point qu'elles se laissent déployer
+                    et diriger par l'Oeil de temps en temps. Le Silence pourpre lui-même ne fait pas exception. Nous pensons donc que l'Oeil est une organisation extrêment puissante au point de réussir à effacer toute les informations et indices sur elle.
+                </p>
+            </div>
             <div id="Shaii-kinn">
-                <h5><u>Les Shaii-kinn</u></h5>
+                <h5><u>Les Shaii-kinn (race)</u></h5>
                 <p>
                     Les Shaii-kinn sont un peuple et une race à part entière très inspiré du style visuel arabe. Il peuple le continent de TerraTshaiid et certains déserts de Terrahill. Ce peuple est la première création
                     du <a href="terrahill-pantheon.html#Master">Maître des Mondes</a>, il les a conçu à son image : neutre par rapport aux affaires extérieur à leur peuple. Cette race présente
@@ -1674,20 +1902,57 @@
                     mais les armes sont très régulièrement utilisées.
                 </p>
                 <p><u><b>Les principaux clans :</b></u></p><ul>
-                    <li><b>Les Nerr-Shaii :</b> protecteurs et guerriers agiles, les Nerr-Shaii sont le seul clan qui reste neutre avec les affaires des Shaii-kinn, ils s'occupent de la protection du continent face aux créatures et colonisateurs trop confiants.</li>
-                    <li><b>Les Shaii-Dorr :</b> navigateurs et commerçants riches, les Shaii-Dorr sont en majorité des marchands qui naviguent sur les mers de Terrahill. Ils sont le clan le plus riche des Shaii-kinn.</li>
-                    <li><b>Les Clinann-Shaii :</b> navigateurs et voyageurs de la mer, les Clinann-Shaii sont des marins, ils voguent sur les mers pour vendre les marchandises de leur clan et des autres, ils s'occupent d'exporter les marchandises en majorité.</li>
-                    <li><b>Les Pa-Shaii :</b> vagabonds et voyageurs, les Pa-Shaii se baladent sur les Terres de Terrahill dans le but d'apprendre et d'approfondir leur lien avec la Création.</li>
-                    <li><b>Les Trerr-Shaii :</b> mineurs et forgerons, Les Trerr-Shaii sont des travailleurs, ils récoltent du bois, ils minent, ils cueillent, ce sont eux qui sont à la base de la chaîne des ressources premières et du travaille de la matière qu'ils vendent souvent ensuite aux autres clans.</li>
-                    <li><b>Les Kiir-Shaii :</b> sages et érudits, les Kiir-Shaii sont les plus anciens Shaii-kinn, certain se rappellent encore des temps qui ont eu lieu avant la <a href="terrahill-histoire.html#Aube">Guerre de l'Aube</a>. Ils se rassemblent pour partager leurs connaissances et leur sagesse.</li>
+                    <li><b>Les Nerr-Shaii :</b> protecteurs et guerriers agiles, les Nerr-Shaii sont le seul clan qui reste neutre avec les affaires des Shaii-kinn, ils s'occupent de la protection du continent face aux créatures et colonisateurs trop confiants.
+                    <p style="text-indent: 0px;">
+                        Dirigeant : Beldor
+                        <br>Trésorie estimée : 98.400.000 PO
+                    </p></li>
+                    <li><b>Les Shaii-Dorr :</b> navigateurs et commerçants riches, les Shaii-Dorr sont en majorité des marchands qui naviguent sur les mers de Terrahill. Ils sont le clan le plus riche des Shaii-kinn.
+                    <p style="text-indent: 0px;">
+                        Dirigeant : <i>à déterminer</i>
+                        <br>Trésorie estimée : 5.070.000.000 PO
+                    </p></li>
+                    <li><b>Les Clinann-Shaii :</b> navigateurs et voyageurs de la mer, les Clinann-Shaii sont des marins, ils voguent sur les mers pour vendre les marchandises de leur clan et des autres, ils s'occupent d'exporter les marchandises en majorité.
+                    <p style="text-indent: 0px;">
+                        Dirigeant : <i>à déterminer</i>
+                        <br>Trésorie estimée : <i>à déterminer</i>
+                    </p></li>
+                    <li><b>Les Pa-Shaii :</b> vagabonds et voyageurs, les Pa-Shaii se baladent sur les Terres de Terrahill dans le but d'apprendre et d'approfondir leur lien avec la Création.
+                    <p style="text-indent: 0px;">
+                        Dirigeant : <i>à déterminer</i>
+                        <br>Trésorie estimée : <i>à déterminer</i>
+                    </p></li>
+                    <li><b>Les Trerr-Shaii :</b> mineurs et forgerons, Les Trerr-Shaii sont des travailleurs, ils récoltent du bois, ils minent, ils cueillent, ce sont eux qui sont à la base de la chaîne des ressources premières et du travaille de la matière qu'ils vendent souvent ensuite aux autres clans.
+                    <p style="text-indent: 0px;">
+                        Dirigeant : <i>à déterminer</i>
+                        <br>Trésorie estimée : 76.200.000 PO
+                    </p></li>
+                    <li><b>Les Kiir-Shaii :</b> sages et érudits, les Kiir-Shaii sont les plus anciens Shaii-kinn, certain se rappellent encore des temps qui ont eu lieu avant la <a href="terrahill-histoire.html#Aube">Guerre de l'Aube</a>. Ils se rassemblent pour partager leurs connaissances et leur sagesse.
+                    <p style="text-indent: 0px;">
+                        Dirigeant : <i>à déterminer</i>
+                        <br>Trésorie estimée : 2.670.000.000 PO
+                    </p></li>
                 </ul>
                 <p><u><b>Les autres clans :</b></u></p><ul>
-                    <li><b>Les Etrimm-Shaii :</b> guerriers et assassins, les Etrimm-Shaii sont les plus barbares des Shaii-kinn, ils sont très souvent en guerre avec les autres clans et volent et pillent des navires et villages.</li>
-                    <li><b>Les Shaii-Tshaiid :</b> voyageurs et vagabonds solitaires, les Shaii-Tshaiid sont similaires aux Pa-Shaii mais préfèrent rester seul. Ils se cachent et se déguisent pour aller sur les autres continent sans être traiter différement, ils aiment apprendre la culture et les traditions d'un pays en se faisant passer pour un habitant.</li>
+                    <li><b>Les Etrimm-Shaii :</b> guerriers et assassins, les Etrimm-Shaii sont les plus barbares des Shaii-kinn, ils sont très souvent en guerre avec les autres clans et volent et pillent des navires et villages.
+                    <p style="text-indent: 0px;">
+                        Dirigeant : <i>à déterminer</i>
+                        <br>Trésorie estimée : <i>à déterminer</i>
+                    </p></li>
+                    <li><b>Les Shaii-Tshaiid :</b> voyageurs et vagabonds solitaires, les Shaii-Tshaiid sont similaires aux Pa-Shaii mais préfèrent rester seul. Ils se cachent et se déguisent pour aller sur les autres continent sans être traiter différement, ils aiment apprendre la culture et les traditions d'un pays en se faisant passer pour un habitant.
+                    <p style="text-indent: 0px;">
+                        Dirigeant : Agmelor
+                        <br>Trésorie estimée : 46.200.000 PO
+                    </p></li>
                 </ul>
             </div>
             <div id="Voile_cendre">
                 <h5><u>Le Voile Cendré</u></h5>
+                <p style="text-indent: 0px;">
+                    <b>Dirigeant :</b> <i>dirigeant inconnu</i>
+                    <br><b>Echelle :</b> Mondiale (Terrahill)
+                    <br><b>Trésorie estimée :</b> <i>aucune estimation réalisée</i>
+                </p>
                 <p>
                     Le Voile Cendré se veut un groupe de protecteurs du monde, ils semblent apparemment penser que les <a href="#Createurs">Créateurs</a> ne suffisent pas.
                     Ils éliminent de différentes manières les gens qu'ils jugent comme des anomalies capables de changer le monde de façon persistante. Citons-les :
@@ -1707,6 +1972,9 @@
             </div>
             <div id="Nerrliatt">
                 <h5><u>La Larme Noire - Nerrliatt</u></h5>
+                <p>
+                    Estimation : inestimable
+                </p>
                 <div style="display: flex;">
                     <img src="../image/Nerrliatt.jpg" alt="La Nerrliatt" class="gauche" style="width: 200px;height: auto;">
                     <p class="droite">
@@ -1716,6 +1984,9 @@
             </div>
             <div id="Flamme_Eordenn">
                 <h5><u>La Flamme d'Eordènn</u></h5>
+                <p>
+                    Estimation : inestimable
+                </p>
                 <div style="display: flex;">
                     <img src=".jpg" alt="La Flamme d'Eordènn" class="gauche" style="width: 200px;height: auto;">
                     <p class="droite">
@@ -1725,6 +1996,9 @@
             </div>
             <div id="Jugement">
                 <h5><u>Les Lames du Jugement</u></h5>
+                <p>
+                    Estimation : inestimable
+                </p>
                 <p>
                     L'existence des 5 Lames du Jugement n'est pas prouvée et même si ces armes existent nous ne savons pas si elles ont réellement des pouvoirs.
                     En effet, ces Lames sont censé avoir un pouvoir ; pouvoir qui est celui de <i>fragmenter</i> les Forces Supérieures (il n'y a en effet aucun
@@ -1755,16 +2029,17 @@
                         </p>
                     </div>
                 </div>
-                <yann>
-                <div id="">
-                    <h5></h5>
+                <div id="Fleau">
+                    <h5>Le Fléau, le Fléau des dieux</h5>
                     <div style="display: flex;">
-                        <img src=".jpg" alt="" class="gauche" style="width: 200px;height: auto;">
+                        <img src=".jpg" alt="Le Fléau des dieux" class="gauche" style="width: 200px;height: auto;">
                         <p class="droite">
-
+                            Vide dû au fait que le pauvre niouk qui programme ce site n'a pas encore d'idée pour l'histoire de cette arme.
+                            <br><br>P.S. : Avez-vous remarqué que cette Lame du Jugement ne possède pas de lame ?
                         </p>
                     </div>
                 </div>
+                <yann>
                 <div id="">
                     <h5></h5>
                     <div style="display: flex;">
