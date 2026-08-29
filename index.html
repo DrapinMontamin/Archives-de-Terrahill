@@ -49,6 +49,11 @@
         #secret::placeholder {
             color: rgb(151, 81, 0);
         }
+        @media (max-width: 600px) {
+            #faq {
+                display: none !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -100,6 +105,7 @@
                 <li>Les Personnages :
                     <ul>
                         <li>Ecriture de <a href="html/terrahill-encyclopedie.html#Yann2">Yann Damakos</a></li>
+                        <li>Ajout de <a href="html/terrahill-encyclopedie.html#Fandell">Fandell Montamin</a></li>
                         <li>Ajout de <a href="html/terrahill-encyclopedie.html#Nemeïa">Nemeïa Anagénnesis</a></li>
                         <li>Ajout et écriture d'<a href="html/terrahill-encyclopedie.html#Rieur">Umag Bas-sang le Rieur</a></li>
                         <li>Ajout et écritures des <a href="html/terrahill-encyclopedie.html#Doleïonn">Doleïonn</a> :
@@ -126,7 +132,7 @@
         </ul>
         </div>
     </section>
-    <section style="position: fixed;top: 55%;right: 5px;background-color: rgba(108, 58, 0, 0.5);color: white;max-width: 30%;" class="patch-notes">
+    <section id="faq" style="position: fixed;top: 55%;right: 5px;background-color: rgba(108, 58, 0, 0.5);color: white;max-width: 30%;" class="patch-notes">
         <h5 style="margin: 5px;"><u>FAQ (Questions : barre de recherche en bas à gauche, réponses à la prochaine mise à jour) :</u></h5>
         <div class="patch-content">
             <p>Q1 - Ô Roméo, pourquoi est-tu Roméo ?<br>R1 - Parce que !</p>
@@ -141,7 +147,7 @@
     </section>
     <section>
         <h6 style="background-color: rgb(108, 58, 0);color: white; position: fixed; left: 1px;bottom: 1px;">Dernière mise à jour : <span id="last-update">Chargement...</span></h6>
-        <h6 style="position: fixed;background-color: rgb(108, 58, 0);bottom: 1px;left: 32%;color: white;text-align: center;">© 2026 Yann Sorel--Pailhes - Terrahill. Tous droits réservés.<br>Réalisé par Yann Sorel--Pailhes avec la participation de Mathéo Gaignard, <a href="html/terrahill-encyclopedie.html#Hugo">Hugo Vildey</a>, <a href="html/terrahill-encyclopedie.html#Thomas">Thomas Olivier</a>.</h6>
+        <h6 style="position: fixed;background-color: rgb(108, 58, 0);bottom: 1px;left: 28%;color: white;text-align: center;">© 2026 Yann Sorel--Pailhes - Terrahill. Tous droits réservés.<br>Réalisé par Yann Sorel--Pailhes avec la participation de Mathéo Gaignard, <a href="html/terrahill-encyclopedie.html#Hugo">Hugo Vildey</a>, <a href="html/terrahill-encyclopedie.html#Thomas">Thomas Olivier</a> et Evana Monnier.</h6>
         <a href="html/ghdfytie.html" class="no" style="color: rgba(108, 58, 0, 1);text-decoration: none;background-color: white;position: fixed;bottom: 10%;left: 46%; display: None;">Les Secrets</a>
         <input type="text" id="secret" onkeydown="if (event.key == 'Enter') checkSecret()" placeholder="Archives privées" style="position: fixed;bottom: 1px;border-color: rgb(151, 81, 0);background-color: rgb(108, 58, 0);">
         <button onclick="checkSecret()" style="position: fixed;bottom: 1px;left: 200px;border-color: rgb(151, 81, 0);background-color: rgb(108, 58, 0);color: white;">Accéder</button>

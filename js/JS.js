@@ -48,11 +48,15 @@ else if (value == "porno") {
 else if (value == "terrket") {
     window.open("html/ghdfytie.html");
 }
+else if (value == "evana") {
+    alert("Tu m'as eu par les sentiments 🥰. Je te laisse l'accès aux Archives Privées.")
+    window.open("html/ghdfytie.html");
+}
 else if (value == "legendes") {
-    window.open("https://drapinmontamin.github.io/Legendes-de-Terrahill/")
+    window.open("contes/contes.html")
 }
 else if (value == "comediarr") {
-    window.open("https://drapinmontamin.github.io/Comediarr-Shaii-kinn/")
+    window.open("comediarr/comediarr.html")
 }
 else {
     erreur += 1;
