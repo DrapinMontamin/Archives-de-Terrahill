@@ -48,10 +48,6 @@ else if (value == "porno") {
 else if (value == "terrket") {
     window.open("html/ghdfytie.html");
 }
-else if (value == "evana") {
-    alert("Tu m'as eu par les sentiments 🥰. Je te laisse l'accès aux Archives Privées.")
-    window.open("html/ghdfytie.html");
-}
 else if (value == "legendes") {
     window.open("contes/contes.html")
 }

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>L'Archipel aux Saphirs</title>
+		<meta charset="utf-8">
+        <link rel="icon" type="image/png" href="../image/batal1.png">
+        <style>
+            html{
+                background-color: rgb(0, 55, 255);
+                display: block;
+                background-image: url(../image/batal1.png);
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            main {
+                display: flex;
+            }
+            header{
+                text-align: center;
+                background-color: rgb(0, 55, 255);
+                color: white;
+            }
+            section {
+                background-color: rgba(89, 125, 255, 0.8);
+                margin: 40px;
+            }
+            p {
+               text-indent: 40px;
+               text-align: justify;
+            }
+            a {
+                color: black;
+            }
+            div {
+                margin: 10px;
+            }
+            .letter {
+                background-color: rgba(40, 86, 255, 0.7);
+                margin-left: 22%;
+                margin-right: 22%;
+            }
+            .gauche {
+                display: block fixed;
+                flex : 1;
+                background-color: rgba(40, 86, 255, 0.7);
+                margin-right: 10px;
+            }
+            .droite {
+                display: block;
+                text-align: left;
+                flex : 5;
+                margin-left: 10px;
+            }
+            .haut {
+                position: fixed;
+                bottom: 10px;      /* distance depuis le haut */
+                right: 20px;    /* ou left: 20px */
+                z-index: 1000;  /* pour rester au-dessus des autres éléments */
+            }
+            .menu {
+                position: fixed;
+                bottom: 40px;      /* distance depuis le haut */
+                right: 37px;    /* ou left: 20px */
+                z-index: 1000;  /* pour rester au-dessus des autres éléments */
+            }
+            .button {
+               flex: 1;
+               background-color: rgb(0, 30, 138);
+               margin: 5px;
+               color: white;
+               text-decoration: none;
+            }
+            .button:hover {
+               background-color: rgb(73, 113, 255);
+            }
+            yann {
+                display: none;
+            }
+        </style>
+	</head>
+	<body>
+        <header>
+            <h1><u>L'Archipel aux Saphirs</u></h1>
+            <p>Cette page est dédiée à la vaste organisation du plus grand Archipel de Terrahill (qui est également la plus grande zone géographique du monde).</p>
+		</header>
+        <nav style="text-align: center;display: flex;">
+            <a href="terrahill-encyclopedie.html" class="no button" >L'encyclopédie</a>
+            <a href="terrahill-pantheon.html" class="no button" >Le Panthéon</a>
+            <a href="terrahill-histoire.html" class="no button" >L'Histoire</a>
+        </nav>
+        <nav style="text-align: center;" class="letter">
+            <p>
+                <a href="#a">A</a> - 
+                <a href="#b">B</a> - 
+                <a href="#c">C</a> - 
+                <a href="#d">D</a> - 
+                <a href="#e">E</a> - 
+                <a href="#f">F</a> - 
+                <a href="#g">G</a> - 
+                <a href="#h">H</a> - 
+                <a href="#i">I</a> - 
+                <a href="#j">J</a> - 
+                <a href="#k">K</a> - 
+                <a href="#l">L</a> - 
+                <a href="#m">M</a> - 
+                <a href="#n">N</a> - 
+                <a href="#o">O</a> - 
+                <a href="#p">P</a> - 
+                <a href="#q">Q</a> - 
+                <a href="#r">R</a> - 
+                <a href="#s">S</a> - 
+                <a href="#t">T</a> - 
+                <a href="#u">U</a> - 
+                <a href="#v">V</a> - 
+                <a href="#w">W</a> - 
+                <a href="#x">X</a> - 
+                <a href="#y">Y</a> - 
+                <a href="#z">Z</a>
+            </p>
+        </nav>
+        <main id="voile" style="display: none;">
+            <p style="text-align: center;text-indent: 0px;font-size:50px;background-color: red;margin-left: 445px;margin-right: 445px;color: white;"><!--Contenu toujours lisible dans le code-->Actuellement voilé pour cause d'indexation involontaire</p>
+            <div style="text-align: center;"><input type="Text" id="message" placeholder="Petit mot pour le pauvre développeur" style="min-width: 225px;"></div>
+            <pre style="min-height: 5000px;"></pre>
+            <p style="text-align: center;text-indent: 0px;font-size:50px;background-color: red;margin-left: 445px;margin-right: 445px;color: white;">Sorry Bro</p>
+        </main>
+        <main id="contenu" style="display: flex;">
+        <nav class="gauche">
+            <ul>- Raccourcis :
+                <li><a href="#Bateaux">Les Bateaux</a></li>
+                <li><a href="#Capitaines">Les Capitaines</a></li>
+                <li><a href="#Dieux">Les Divinités</a></li>
+                <li><a href="#Factions">Les Factions</a></li>
+            </ul>
+            <ul id="a">- A :
+                <li><a href="#ÂNoyé">L'Âme du Noyé</a></li>
+                <li><a href="#Audmyr">Audmyr</a></li>
+                <li><a href="#Autre">L'Autre</a></li>
+            </ul>
+            <ul  id="b">- B :
+                <li><a href="#Buse">La Buse</a></li>
+            </ul>
+            <ul  id="c">- C :
+                <li><a href="#CrâneOr">Le Crâne d'or</a></li>
+            </ul>
+            <ul  id="d">- D :
+                <li><a href="#Darrick">Darrick</a></li>
+                <li><a href="#Daviot">Daviot</a></li>
+            </ul>
+            <ul id="e">- E :
+                <li><a href="#Edouard">Edouard</a></li>
+                <li><a href="#Edouard_B">Edouard Badeau</a></li>
+                <li><a href="#Erodmer">Erodmer</a></li>
+            </ul>
+            <ul id="f">- F :
+                <li><a href="#Frocs">Les Frocs à trous</a></li>
+            </ul>
+            <ul id="g">- G :
+                <li><a href="#Guillaumer">Guillaumer</a></li>
+            </ul>
+            <ul id="h">- H :
+                
+            </ul>
+            <ul id="i">- I :
+                
+            </ul>
+            <ul id="j">- J :
+                <li><a href="#JackM">Jack le Moineau</a></li>
+                <li><a href="#JackN">Jack le Noir</a></li>
+            </ul>
+            <ul id="k">- K :
+                <li><a href="#Kadil">Kadil l'Assoifé</a></li>
+            </ul>
+            <ul id="l">- L :
+                
+            </ul>
+            <ul id="m">- M :
+                <li><a href="#MerVenteuse">Le Mer Venteuse</a></li>
+            </ul>
+            <ul id="n">- N :
+                <li><a href="#Noyé">Le Noyé</a></li>
+            </ul>
+            <ul id="o">- O :
+                <li><a href="#Ormund">Ormund</a></li>
+            </ul>
+            <ul id="p">- P :
+                
+            </ul>
+            <ul id="q">- Q :
+                
+            </ul>
+            <ul id="r">- R :
+                <li><a href="#Rédemption">Le Rédemption</a></li>
+                <li><a href="#Résilience">Le Résilience</a></li>
+            </ul>
+            <ul id="s">- S :
+                
+            </ul>
+            <ul id="t">- T :
+                <li><a href="#Téméraire">Le Téméraire</a></li>
+                <li><a href="#Edouard_B">Le Trident</a></li>
+            </ul>
+            <ul id="u">- U :
+
+            </ul>
+            <ul id="v">- V :
+                
+            </ul>
+            <ul id="w">- W :
+
+            </ul>
+            <ul id="x">- X :
+
+            </ul>
+            <ul id="y">- Y :
+
+            </ul>
+            <ul id="z">- Z :
+                
+            </ul>
+        </nav>
+        <nav class="droite">
+            <section id="Bateaux" style="background-color: blue;color: white;">
+                <div>
+                    <h3 style="text-align: center;"><u>Les Bateaux</u></h3>
+                </div>
+            </section>
+            <section id="MerVenteuse">
+                <div>
+                    <h3><u>Le Mer Venteuse</u></h3>
+                </div>
+            </section>
+            <section id="Rédemption">
+                <div>
+                    <h3><u>Le Rédemption</u></h3>
+                </div>
+            </section>
+            <section id="Résilience">
+                <div>
+                    <h3><u>Le Résilience</u></h3>
+                </div>
+            </section>
+            <section id="Téméraire">
+                <div>
+                    <h3><u>Le Téméraire</u></h3>
+                </div>
+            </section>
+            <section id="Capitaines" style="background-color: blue;color: white;">
+                <div>
+                    <h3 style="text-align: center;"><u>Les Capitaines</u></h3>
+                </div>
+            </section>
+            <section id="Edouard_B">
+                <div>
+                    <h3><u>Edouard Badeau, dit "Le Trident"</u></h3>
+                    <ul>
+                        <li><b>Race : </b>Humain</li>
+                        <li><b>Statut : </b>Chasseur de Pirate</li>
+                        <li><b>Faction(s) associée(s) : </b><a href="#CrâneOr">Le Crâne d'or</a></li>
+                        <li><b>Grade(s) au sein de la/les faction(s) : </b>Chasseur de rang 0</li>
+                        <li><b>Nombre de bateau(x) : </b>3</li>
+                        <li><b>Liste du/des bateau(x) :</b><ul>
+                            <li><a href="#MerVenteuse">Le Mer Venteuse</a></li>
+                            <li><a href="#Résilience">Le Résilience</a></li>
+                            <li><a href="#Téméraire">Le Téméraire</a></li>
+                        </ul></li>
+                    </ul>
+                    <p>
+                        Edouard Badeau tient son surnom de "Trident" à sa barbe qui est une barbe trois pointes, aussi nommé barbe trident. Sur Ilda, Le Trident est connu pour
+                        avoir chassé de nombreux pirates. On raconte qu'il n'a jamais connu de défaite, c'est pour cela qu'il est l'un des rang 0 du <a href="#CrâneOr">Crâne d'or</a>.
+                        Edouard est un homme particulier, du haut de sa carrure plutôt faible, il semble être un piètre marin à la limite associé aux <a href="#Frocs">Frocs à trous</a>,
+                        or en réalité, Eddy est un homme intransigeant et violent lors des combats, même s'il reste une personne très calme et douce le reste du temps. Certaines dames et
+                        hommes des maisons portuaires qu'il fréquente réguliérement l'appellent "Peluche".
+                    </p>
+                    <p>
+                        <b>Comment le reconnaître ? </b> Reconnaître le Trident sera simple. Il possède une carrure faible, comme tout les marins me direz-vous. Le style vestimentaire du
+                        Trident est composé de manteaux court et très colorés et de pantalons larges aux mollets. Mais le moyen le plus simple de le reconnaître reste toujours sa barbe bleu
+                        formant trois pointes maintenues par des sortes de bagues en or et ses cheveux bleu et doré.
+                    </p>
+                </div>
+            </section>
+            <section id="Kadil">
+                <div>
+                    <h3><u>Kadil l'Assoifé</u></h3>
+                    <ul>
+                        <li><b>Race : </b>Aasimar</li>
+                        <li><b>Statut : </b>Pirate</li>
+                        <li><b>Faction(s) associée(s) : </b><a href="#ÂNoyé">L'Âme du Noyé</a></li>
+                        <li><b>Grade(s) au sein de la/les faction(s) : </b>Chef de faction, 1er des 6 Piliers du Noyé</li>
+                        <li><b>Nombre de bateau(x) : </b>1</li>
+                        <li><b>Liste du/des bateau(x) :</b><ul>
+                            <li><a href="#Rédemption">Le Rédemption</a></li>
+                        </ul></li>
+                    </ul>
+                    <p>
+                        Kadil l'Assoifé est un pirate de <a href="#ÂNoyé">L'Âme du Noyé</a>, et bien qu'il n'ai qu'un unique bateau, <a href="#Rédemption">Le Rédemption</a>,
+                        il n'en est pas moins une terreur des océans. En effet, Kadil sert le <a href="#Noyé">Noyé</a> comme il pense devoir le servir, par le massacre et la torture.
+                        C'est ainsi qu'il s'est bâtit une réputation d'homme cruel et inflexible menant ceux qui l'aperçoivent à ressentir une peur profonde et devenant le symbole maritime
+                        de la douleur par la torture. Certains pensent qu'à sa mort, il rejoindra le <a href="#Noyé">Noyé</a> et deviendra dieu de la douleur et de la torture en mer,
+                        les autres pensent qu'il ne mourra jamais car il est putain d'increvable l'enfoiré.
+                    </p>
+                    <p>
+                        <b>Comment le reconnaître ? </b>Kadil est un homme grand d'environ 1m90, il porte un long manteau sur lequel des sceaux de prières aux <a href="#Noyé">Noyé</a>
+                        sont collés, il porte une écharpe plus longue que son manteau sur laquelle des symboles liés au <a href="#Noyé">Noyé</a> sont inscris. Kadil est un Aasimar albinos,
+                        il a des cheveux blancs, des yeux rouges et une peau pâle. Il possède une tendance à garder ses bras en prière.
+                    </p>
+                </div>
+            </section>
+            <section id="Dieux" style="background-color: blue;color: white;">
+                <div>
+                    <h3 style="text-align: center;"><u>Les Divinités</u></h3>
+                    <p style="text-align: center;text-indent: 0px;">Les "enfants" d'Ilda, l'océan.</p>
+                </div>
+            </section>
+            <section id="Audmyr">
+                <div>
+                    <h3><u>Audmyr</u></h3>
+                    <p>
+                        Audmyr est le dieu de la justice en mer. <i>Suite plus tard</i>
+                    </p>
+                </div>
+            </section>
+            <section id="Autre">
+                <div>
+                    <h3><u>L'Autre</u></h3>
+                    <p>
+                        L'Autre est la représentation des dieux non-marins. <i>Suite plus tard</i>
+                    </p>
+                </div>
+            </section>
+            <section id="Buse">
+                <div>
+                    <h3><u>La Buse</u></h3>
+                    <p>
+                        La Buse est le dieu des cartes, de l'information et des messagers en mer. <i>Suite plus tard</i>
+                    </p>
+                </div>
+            </section>
+            <section id="Darrick">
+                <div>
+                    <h3><u>Darrick</u></h3>
+                    <p>
+                        Darrick est le dieu des bateaux. <i>Suite plus tard</i>
+                    </p>
+                </div>
+            </section>
+            <section id="Daviot">
+                <div>
+                    <h3><u>Daviot</u></h3>
+                    <p>
+                        Daviot est le dieu des guerriers en mer. <i>Suite plus tard</i>
+                    </p>
+                </div>
+            </section>
+            <section id="Edouard">
+                <div>
+                    <h3><u>Edouard</u></h3>
+                    <p>
+                        Edouard est le dieu des petits marins. <i>Suite plus tard</i>
+                    </p>
+                </div>
+            </section>
+            <section id="Erodmer">
+                <div>
+                    <h3><u>Erodmer</u></h3>
+                    <p>
+                        Erodmer est le dieu des marchands en mer. <i>Suite plus tard</i>
+                    </p>
+                </div>
+            </section>
+            <section id="Guillaumer">
+                <div>
+                    <h3><u>Guillaumer</u></h3>
+                    <p>
+                        Guillaumer est le dieu du tourisme en mer. <i>Suite plus tard</i>
+                    </p>
+                </div>
+            </section>
+            <section id="Grand">
+                <div>
+                    <h3><u>Le Grand des Eaux</u></h3>
+                    <p>
+                        Le Grand des Eaux est le dieu des créatures marines. <i>Suite plus tard</i>
+                    </p>
+                </div>
+            </section>
+            <section id="JackM">
+                <div>
+                    <h3><u>Jack le Moineau</u></h3>
+                    <p>
+                        Jack le Moineau est le dieu de la fête, de l'alcool et de la drogue en mer. <i>Suite plus tard</i>
+                    </p>
+                </div>
+            </section>
+            <section id="JackN">
+                <div>
+                    <h3><u>Jack le Noir</u></h3>
+                    <p>
+                        Jack le Noir est le dieu des pirates. <i>Suite plus tard</i>
+                    </p>
+                </div>
+            </section>
+            <section id="Noyé">
+                <div>
+                    <h3><u>Le Noyé</u></h3>
+                    <p>
+                        Le Noyé est le dieu des mort en mer. <i>Suite plus tard</i>
+                    </p>
+                </div>
+            </section>
+            <section id="Ormund">
+                <div>
+                    <h3><u>Ormund</u></h3>
+                    <p>
+                        Ormund est le dieu de l'or et des trésors en mer. <i>Suite plus tard</i>
+                    </p>
+                </div>
+            </section>
+            <section id="Factions" style="background-color: blue;color: white;">
+                <div>
+                    <h3 style="text-align: center;"><u>Les Factions</u></h3>
+                </div>
+            </section>
+            <section id="ÂNoyé">
+                <div>
+                    <h3><u>L'Âme du Noyé</u></h3>
+                    <p>
+
+                    </p>
+                </div>
+            </section>
+            <section id="CrâneOr">
+                <div>
+                    <h3><u>Le Crâne d'or</u></h3>
+                    <p>
+
+                    </p>
+                </div>
+            </section>
+            <section id="Frocs">
+                <div>
+                    <h3><u>Les Frocs à trous</u></h3>
+                    <p>
+
+                    </p>
+                </div>
+            </section>
+        </nav>
+        </main>
+        <footer>
+            <a href="" style="background-color: rgb(0, 30, 138);color: white;text-decoration: none;" class="no haut">Retour en Haut</a>
+            <a href="../index.html" style="background-color: rgb(0, 30, 138);color: white;text-decoration: none;" class="no menu">Sommaire</a>
+        </footer>
+    </body>
+    <script>
+        document.querySelectorAll("a:not(.no)").forEach(lien => {
+                lien.addEventListener("mouseenter", () => {
+                lien.style.backgroundColor = "rgb(0, 30, 138)";
+                lien.style.color = "white";
+            });
+
+                lien.addEventListener("mouseleave", () => {
+                lien.style.backgroundColor = "";
+                lien.style.color = "black";
+            });
+        });
+    </script>
+</html>

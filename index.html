@@ -27,12 +27,16 @@
             background-color: rgb(255, 162, 0);
             color: rgb(0, 0, 0);
         }
+        .button1:hover {
+            background-color: rgb(0, 55, 255) !important;
+            color: rgb(0, 0, 0) !important;
+        }
         .patch-notes {
             width: 350px;
-            min-height: 200px;
+            min-height: 150px;
         }
         .patch-content {
-            max-height: 175px;
+            max-height: 125px;
             overflow-y: auto;
             list-style-position: inside;
         }
@@ -58,13 +62,14 @@
 </head>
 <body>
     <header style="text-align: center;background-color: rgb(108, 58, 0);color: white;">
-        <h1><u>Archives publ<a href="html/terrahill-pantheon.html#Khalamite" style="color: white;">i</a>ques de Terrahill</u></h1>
+        <h1><u>Archives publ<a href="html/terrahill-pantheon.html#Khalamite" style="color: white;" id="i">i</a>ques de Terrahill</u></h1>
         <p>D'ici vous pouvez accéder à toutes (ou presque toutes) les informations sur le monde passionant, vaste et regorgeant d'histoires de Terrahill.</p>
     </header>
     <main style="display: flex;">
     <a href="html/terrahill-encyclopedie.html" class="button">L'encyclopédie</a>
     <a href="html/terrahill-pantheon.html" class="button">Le Panthéon</a>
     <a href="html/terrahill-histoire.html" class="button">L'Histoire</a>
+    <a href="html/terrahill-saphirs.html" class="button1 button banger" id="saphirs">L'Archipel aux Saphirs</a>
     </main>
     <footer style="display: flex;">
         <div style="flex: 1;;background-color: rgba(108, 58, 0, 0.5);margin: 25px;color: white;">
@@ -76,68 +81,22 @@
         <div style="flex: 1;background-color: rgba(108, 58, 0, 0.5);margin: 25px;color: white;">
             <p>L'histoire d'un vaste monde décrit toute l'histoire connue du monde de Terrahill, de l'autre monde et des plans associés.</p>
         </div>
+        <div style="flex: 1;background-color: rgba(108, 58, 0, 0.5);margin: 25px;color: white;" class="banger" id="saphirs1">
+            <p>Cette page est spécialement pour les fans de piraterie et d'aventures en mer, elle est dédiée à la vaste organisation du plus grand Archipel de Terrahill (qui est également la plus grande zone géographique du monde).</p>
+        </div>
     </footer>
     <p style="position: fixed;bottom: 70px;left: 33.5%;background-color: rgba(108, 58, 0, 0.5);color: white;max-width: 30%;">Date actuelle des Archives dans Terrahill : 19 Mars 831 de l'ère des civilisations</p>
-    <section style="position: fixed;top: 55%;left: 5px;background-color: rgba(108, 58, 0, 0.5);color: white;" class="patch-notes">
+    <section style="position: fixed;bottom: 10%;left: 5px;background-color: rgba(108, 58, 0, 0.5);color: white;" class="patch-notes">
         <h5 style="margin: 5px;"><u>Note de mise à jour :</u></h5>
         <div class="patch-content">
         <ul style="margin: 5px;">
-            <li>Dans l'Encyclopédie :
-            <ul>
-                <!--<li>Les Familles inférieures :
-                    <ul>
-                        
-                    </ul>
-                </li>-->
-                <!--<li>Les Organisations :
-                    <ul>
-                        
-                    </ul>
-                </li>-->
-                <li>Les Personnages :
-                    <ul>
-                        <li>Ajout des <a href="html/terrahill-encyclopedie.html#Ibalaan">Ibalaan</a></li>
-                        <li>Les Ibalaan :
-                            <ul>
-                                <li>Transfert de <a href="html/terrahill-encyclopedie.html#Rieur">Calgor</a></li>
-                                <li>Ajout de <a href="html/terrahill-encyclopedie.html#MJ">Tialgor</a></li>
-                                <li>Ajout d'<a href="html/terrahill-encyclopedie.html#Stratege">Ilyal</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>Les Artéfacts :
-                    <ul>
-                        <li>Ajout de la <a href="html/terrahill-encyclopedie.html#Double-dent">Double-dent</a></li>
-                        <li>Ajout de <a href="html/terrahill-encyclopedie.html#Bilodd">Bilodd</a></li>
-                    </ul>
-                </li>
-                <li>Ajout d'une section <a href="html/terrahill-encyclopedie.html#races">Races</a></li>
-                <li>Les Races :
-                    <ul>
-                        <li>Transfert des <a href="html/terrahill-encyclopedie.html#Shaii-kinn">Shaii-kinn</a></li>
-                        <li>Ajout des <a href="html/terrahill-encyclopedie.html#Narrak">Narrak</a></li>
-                    </ul>
-                </li>             
-            </ul>
-            </li>
-            <!--<li>Dans le Panthéon :
-            <ul>
-
-            </ul>
-            </li>-->
-            <li>Dans l'Histoire :
-            <ul>
-                <li>Ajout et écriture de <a href="html/terrahill-histoire.html#Folle">l'ère Folle</a></li>
-                <li>Ajout et écriture de <a href="html/terrahill-histoire.html#Guerre_folle">la Guerre Folle</a></li>
-            </ul>
-            </li>
+            <li><b><u><i>Ajout de la sublime et magnifique <span style="color: red;background-color: white;">page</span> sur le grand, vaste et beau <a href="html/terrahill-saphirs.html"><span style="color: red;background-color: white;">Archipel aux Saphirs</span></a></i></u></b></li>
             <li>Ecriture en masse ☠️</li>
             <li>Décapitation des fautes entre Agarr et Le Chateau de Vannatu inclus</li>
         </ul>
         </div>
     </section>
-    <section id="faq" style="position: fixed;top: 55%;right: 5px;background-color: rgba(108, 58, 0, 0.5);color: white;max-width: 30%;" class="patch-notes">
+    <section id="faq" style="position: fixed;bottom: 10%;right: 5px;background-color: rgba(108, 58, 0, 0.5);color: white;max-width: 30%;" class="patch-notes">
         <h5 style="margin: 5px;"><u>FAQ (Questions : barre de recherche en bas à gauche, réponses à la prochaine mise à jour) :</u></h5>
         <div class="patch-content">
             <p>Q1 - Ô Roméo, pourquoi est-tu Roméo ?<br>R1 - Parce que !</p>
@@ -157,6 +116,7 @@
         <input type="text" id="secret" onkeydown="if (event.key == 'Enter') checkSecret()" placeholder="Archives privées" style="position: fixed;bottom: 1px;border-color: rgb(151, 81, 0);background-color: rgb(108, 58, 0);">
         <button onclick="checkSecret()" style="position: fixed;bottom: 1px;left: 200px;border-color: rgb(151, 81, 0);background-color: rgb(108, 58, 0);color: white;">Accéder</button>
     </section>
+    <div style="position: fixed;top: 50%;left: 35%;display: none;" id="i1"><section style="background-color: black;color: green;"><p style="margin: 20px;">Bah alors ?<br>Tu es chelou toi...<br>Arrête de chercher des liens cachés partout stp_</p></section></div>
 </body>
 <script>
     const owner = "DrapinMontamin";
@@ -179,5 +139,18 @@
                     second: "2-digit"
                 });
         });
+    document.getElementById("saphirs").addEventListener("mouseenter", ()=> {
+        document.getElementById("saphirs1").style.background= 'rgba(40, 86, 255, 0.7)';
+    })
+    document.getElementById("saphirs").addEventListener("mouseleave", ()=> {
+        document.getElementById("saphirs1").style.background= 'rgba(108, 58, 0, 0.5)';
+    })
+
+    document.getElementById("i").addEventListener("mouseenter", ()=> {
+        document.getElementById("i1").style.display= "block";
+    })
+    document.getElementById("i").addEventListener("mouseleave", ()=> {
+        document.getElementById("i1").style.display= "none";
+    })
 </script>
 </html>
