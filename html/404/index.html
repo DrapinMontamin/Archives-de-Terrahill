@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>404 · Page disparue · Archives de Terrahill</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  @property --accent{syntax:'<color>';inherits:true;initial-value:#ffab00}
+  @property --shift{syntax:'<length>';inherits:true;initial-value:3px}
+
+  :root{
+    --accent:#ffab00;
+    --shift:3px;
+    --void:#06050c;
+    --ivory:#f2e5c4;
+    --muted:#b5a888;
+    --amber:#ffab00;
+    transition:--accent .7s ease, --shift .6s ease;
+  }
+  :root.shatter{--shift:22px}
+
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    min-height:100vh;
+    background:radial-gradient(120% 100% at 30% 40%, #14102a 0%, #0a0815 50%, var(--void) 100%);
+    color:var(--ivory);
+    font-family:'Noto Serif',Georgia,'Times New Roman',serif;
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+
+  #stars{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+  .aura{
+    position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:radial-gradient(55% 55% at 30% 52%, rgba(255,171,0,.1), transparent 70%);
+    background:radial-gradient(55% 55% at 30% 52%, color-mix(in srgb, var(--accent) 17%, transparent), transparent 70%);
+  }
+
+  .page{position:relative;z-index:1;max-width:1140px;margin:0 auto;padding:22px 22px 44px}
+  .brand{
+    font-family:'Cormorant Garamond',Georgia,serif;font-size:1.3rem;font-weight:600;
+    color:var(--ivory);text-decoration:none;
+  }
+  .brand:hover{text-decoration:underline;text-underline-offset:4px}
+
+  .grid{
+    display:grid;
+    grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);
+    grid-template-areas:
+      "stage intro"
+      "stage oracle"
+      "stage links"
+      "stage foot";
+    grid-template-rows:auto auto auto 1fr;
+    column-gap:clamp(24px,5vw,68px);
+    row-gap:26px;
+    align-items:start;
+    margin-top:6px;
+  }
+  .intro{grid-area:intro;padding-top:min(6vh,48px)}
+  .stage{grid-area:stage;align-self:center}
+  .oracle{grid-area:oracle}
+  .links{grid-area:links}
+  .foot{grid-area:foot;align-self:end}
+
+  h1{
+    margin:0 0 12px;
+    font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;
+    font-size:clamp(2.6rem,6vw,4.1rem);line-height:.98;letter-spacing:-.01em;
+  }
+  .lede{margin:0 0 12px;max-width:46ch;font-size:1.06rem;color:#e0d3b0}
+  .where{margin:0;font-size:.86rem;color:var(--muted)}
+  .where code{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.84rem;
+    color:var(--amber);overflow-wrap:anywhere;
+  }
+
+  /* La scène : le vide et l'orbite */
+  .stage svg{display:block;width:100%;height:auto;max-width:640px;margin:0 auto;overflow:visible}
+  .void-ring{fill:none;stroke:var(--accent);stroke-width:1.6;filter:drop-shadow(0 0 10px var(--accent))}
+  .track{fill:none;stroke:rgba(242,229,196,.13);stroke-dasharray:2 9}
+  .ghost{fill:none;stroke:rgba(242,229,196,.06)}
+  .digits{
+    font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:140px;
+    font-variant-numeric:lining-nums;text-anchor:middle;
+    filter:drop-shadow(0 0 12px rgba(255,171,0,.45));
+  }
+  .band-in{animation:assemble 1.5s cubic-bezier(.16,.84,.3,1) .25s both}
+  @keyframes assemble{from{transform:translateX(var(--from));opacity:0}to{transform:none;opacity:1}}
+  .drift-a{animation:da 5.5s ease-in-out infinite alternate}
+  .drift-b{animation:db 7s ease-in-out infinite alternate}
+  .drift-c{animation:da 6.3s ease-in-out infinite alternate}
+  @keyframes da{from{transform:translateX(calc(var(--shift) * -1))}to{transform:translateX(var(--shift))}}
+  @keyframes db{from{transform:translateX(var(--shift))}to{transform:translateX(calc(var(--shift) * -1))}}
+
+  .orb{cursor:pointer;outline:none}
+  .orb .core{
+    transform-box:fill-box;transform-origin:center;
+    transition:transform .3s ease,opacity .3s ease,filter .3s ease;
+  }
+  .orb .lab{
+    font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:21px;
+    fill:var(--muted);opacity:.85;transition:fill .3s;
+  }
+  .orb:hover .core{transform:scale(1.12)}
+  .orbs.has-active .orb:not(.active) .core{opacity:.5}
+  .orb.active .core{transform:scale(1.3);filter:drop-shadow(0 0 12px currentColor)}
+  .orb.active .lab{fill:currentColor;opacity:1}
+  .orb:focus-visible .core circle:first-child{stroke:#fff;stroke-width:3.5}
+
+  /* Réponse de la Force */
+  .oracle{
+    min-height:15.5em;
+    padding:4px 0 4px 18px;
+    border-left:3px solid var(--accent);
+  }
+  .oracle.show .reply{animation:rise .35s ease-out both}
+  @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  .who{
+    margin:0;
+    font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:500;
+    font-size:clamp(1.7rem,3.4vw,2.2rem);line-height:1.1;color:var(--accent);
+  }
+  .mood{margin:2px 0 10px;font-size:.88rem;color:var(--muted);font-style:italic}
+  .quote{margin:0;font-size:1.12rem;line-height:1.6;max-width:50ch}
+  .count{margin:14px 0 0;font-size:.84rem;color:var(--muted)}
+  .final{margin:10px 0 0;font-size:.98rem;color:var(--amber);max-width:50ch}
+  .final[hidden]{display:none}
+
+  /* Retour aux archives */
+  .links h2{
+    margin:0 0 6px;
+    font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:1.5rem;line-height:1.2;
+  }
+  .links ul{list-style:none;margin:0;padding:0}
+  .links li{border-top:1px solid rgba(242,229,196,.14)}
+  .links li:last-child{border-bottom:1px solid rgba(242,229,196,.14)}
+  .links a{display:block;padding:9px 2px;color:var(--amber);text-decoration:none}
+  .links .nm{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+  .links .ds{display:block;font-size:.84rem;color:var(--muted);font-style:italic}
+  .links a:hover .nm{color:var(--ivory)}
+  .links a:focus-visible{outline:2px solid var(--ivory);outline-offset:2px}
+
+  .foot p{margin:0;font-size:.82rem;color:var(--muted);font-style:italic}
+
+  button:focus-visible{outline:2px solid var(--ivory);outline-offset:3px}
+
+  @media (max-width:900px){
+    .grid{
+      grid-template-columns:minmax(0,1fr);
+      grid-template-areas:"intro" "stage" "oracle" "links" "foot";
+      grid-template-rows:auto;
+      row-gap:22px;
+    }
+    .intro{padding-top:14px}
+    .oracle{min-height:14em}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+  }
+</style>
+</head>
+<body>
+
+<canvas id="stars" aria-hidden="true"></canvas>
+<div class="aura" aria-hidden="true"></div>
+
+<div class="page">
+  <a class="brand" href="/index.html">Archives de Terrahill</a>
+
+  <main class="grid">
+    <section class="intro">
+      <h1>Cette page a disparu.</h1>
+      <p class="lede">Six Forces Supérieures gouvernent les lois de l'existence. L'une d'elles a peut-être vu cette page partir : interroge-les.</p>
+      <p class="where">Adresse demandée : <code id="path">cette adresse</code></p>
+    </section>
+
+    <section class="stage">
+      <svg viewBox="0 0 600 600" role="group" aria-label="Erreur 404. Les six Forces Supérieures tournent autour du vide.">
+        <defs>
+          <radialGradient id="voidGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#000"/>
+            <stop offset="82%" stop-color="#05040a"/>
+            <stop offset="100%" stop-color="#14102a"/>
+          </radialGradient>
+          <linearGradient id="ivoryGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#fff6dc"/>
+            <stop offset="100%" stop-color="#e3b75a"/>
+          </linearGradient>
+          <clipPath id="band1"><rect x="0" y="236" width="600" height="46"/></clipPath>
+          <clipPath id="band2"><rect x="0" y="282" width="600" height="32"/></clipPath>
+          <clipPath id="band3"><rect x="0" y="314" width="600" height="44"/></clipPath>
+        </defs>
+
+        <circle class="ghost" cx="300" cy="300" r="156"/>
+        <circle class="track" cx="300" cy="300" r="200"/>
+        <circle cx="300" cy="300" r="128" fill="url(#voidGrad)"/>
+        <circle class="void-ring" cx="300" cy="300" r="128"/>
+
+        <g aria-hidden="true">
+          <g clip-path="url(#band1)"><g class="band-in" style="--from:-90px"><g class="drift-a"><text class="digits" x="300" y="342" fill="url(#ivoryGrad)">404</text></g></g></g>
+          <g clip-path="url(#band2)"><g class="band-in" style="--from:80px"><g class="drift-b"><text class="digits" x="300" y="342" fill="url(#ivoryGrad)">404</text></g></g></g>
+          <g clip-path="url(#band3)"><g class="band-in" style="--from:-60px"><g class="drift-c"><text class="digits" x="300" y="342" fill="url(#ivoryGrad)">404</text></g></g></g>
+        </g>
+
+        <g class="orbs" id="orbs"></g>
+      </svg>
+    </section>
+
+    <section class="oracle" id="oracle" aria-live="polite">
+      <div class="reply">
+        <p class="who" id="who">Aucune Force n'a encore répondu.</p>
+        <p class="mood" id="mood">Touche une sphère pour l'interroger.</p>
+        <p class="quote" id="quote">Chacune gouverne une loi de l'existence : le Néant, la Création, le Temps, la Mort, la Vie, l'Inconnu. Toutes n'ont pas le même caractère.</p>
+        <p class="final" id="final" hidden>Les six Forces ont répondu, et aucune ne sait. Cette page n'a peut-être jamais existé. Retourne aux archives : elles, au moins, répondent.</p>
+        <p class="count" id="count">Forces interrogées : 0 sur 6</p>
+      </div>
+    </section>
+    <nav class="links" aria-label="Pages des archives">
+      <h2>Retourner aux archives</h2>
+      <ul id="linkList">
+        <li data-key="encyclopedie"><a href="/html/terrahill-encyclopedie.html"><span class="nm">L'Encyclopédie</span><span class="ds">Personnages, familles, lieux et organisations.</span></a></li>
+        <li data-key="pantheon"><a href="/html/terrahill-pantheon.html"><span class="nm">Le Panthéon</span><span class="ds">Les dieux, les Forces Supérieures et la hiérarchie divine.</span></a></li>
+        <li data-key="histoire"><a href="/html/terrahill-histoire.html"><span class="nm">L'Histoire</span><span class="ds">Les âges et les événements de Terrahill.</span></a></li>
+        <li data-key="saphirs"><a href="/html/terrahill-saphirs.html"><span class="nm">L'Archipel aux Saphirs</span><span class="ds">Pirates, marins, guildes et navires.</span></a></li>
+        <li data-key="index"><a href="/index.html"><span class="nm">Le Sommaire</span><span class="ds">L'accueil des archives.</span></a></li>
+      </ul>
+    </nav>
+
+    <div class="foot">
+      <p>Second degré obligatoire pour survivre à ce site. Il ne faut se fier à aucune information de la page erreur car elle a été générée par Claude.</p>
+      <noscript><p>Active JavaScript pour interroger les Forces Supérieures.</p></noscript>
+    </div>
+  </main>
+</div>
+
+<script>
+(function(){
+  var root = document.documentElement;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Adresse demandée et pages les plus proches */
+  var raw = location.pathname || '/';
+  var path;
+  try { path = decodeURIComponent(raw); } catch (e) { path = raw; }
+  if (/\/404[^\/]*\.html$/i.test(path)) { path = '/html/terrahill-pantheno.html'; } /* aperçu direct du fichier */
+  document.getElementById('path').textContent = path;
+
+  function norm(s){
+    s = String(s).toLowerCase();
+    return s.normalize ? s.normalize('NFD').replace(/[̀-ͯ]/g, '') : s;
+  }
+  function lev(a, b){
+    var m = a.length, n = b.length, i, j, prev = [], cur;
+    for (j = 0; j <= n; j++) prev[j] = j;
+    for (i = 1; i <= m; i++){
+      cur = [i];
+      for (j = 1; j <= n; j++){
+        cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a.charAt(i - 1) === b.charAt(j - 1) ? 0 : 1));
+      }
+      prev = cur;
+    }
+    return prev[n];
+  }
+  var keys = {
+    encyclopedie: ['encyclo', 'perso', 'famil', 'lieu', 'organis'],
+    pantheon: ['panth', 'dieu', 'divin', 'god'],
+    histoire: ['hist', 'epoque'],
+    saphirs: ['saphir', 'pirat', 'bateau', 'marin', 'archip'],
+    index: ['index', 'accueil', 'home', 'sommaire']
+  };
+  var bases = {
+    encyclopedie: 'terrahill-encyclopedie', pantheon: 'terrahill-pantheon', histoire: 'terrahill-histoire',
+    saphirs: 'terrahill-saphirs', index: 'index'
+  };
+  var np = norm(path);
+  var seg = np.split('/').filter(Boolean).pop() || np;
+  seg = seg.replace(/\.[a-z0-9]+$/, '');
+  var list = document.getElementById('linkList');
+  var items = Array.prototype.slice.call(list.children);
+  items.forEach(function(li){
+    var k = li.getAttribute('data-key');
+    var s = 1 - lev(seg, bases[k]) / Math.max(seg.length, bases[k].length, 1);
+    for (var q = 0; q < keys[k].length; q++){
+      if (np.indexOf(keys[k][q]) !== -1){ s += 0.5; break; }
+    }
+    li._score = s;
+  });
+  items.sort(function(a, b){ return b._score - a._score; });
+  items.forEach(function(li){ list.appendChild(li); });
+  if (items[0]._score >= 0.45){
+    var nm = items[0].querySelector('.nm');
+    var m = document.createElement('span');
+    m.setAttribute('aria-hidden', 'true');
+    m.textContent = '☞ ';
+    nm.parentNode.insertBefore(m, nm);
+    items[0].querySelector('a').setAttribute('aria-label', nm.textContent + ', la page la plus proche');
+  }
+
+  /* Les six Forces Supérieures */
+  var forces = [
+    { id: 'neant', name: 'Tialikarth', role: 'le Néant', mood: 'chaotique et fou, mort par fragmentation', color: '#a99bff', glyph: 'void',
+      quote: "Cette page ? Fragmentée. Par moi, probablement. Ou par moi hier, ou par moi dans mille ans. J'ai fragmenté tant de choses que j'ai fini par me fragmenter moi-même. Regarde le 404 au centre : c'est du beau travail." },
+    { id: 'creation', name: 'Elinnior', role: 'la Création', mood: 'sage et en retrait', color: '#ffd07a', glyph: 'star',
+      quote: "Je n'ai jamais créé cette page. Je crée peu, j'observe beaucoup, et je ne me mêle de rien. Interroge plutôt celui qui écrit : on le dit proche du Temps." },
+    { id: 'temps', name: 'Tieorcronn', role: 'le Temps', mood: 'contemplatif', color: '#6fd3d0', glyph: 'hour',
+      quote: "Je contemple. Cette page sera peut-être écrite demain, peut-être ne l'a-t-elle jamais été. Dans les deux cas, ce n'est pas moi qui ai tapé cette adresse." },
+    { id: 'mort', name: 'Taanatiorn', role: 'la Mort', mood: 'très calme et sympathique', color: '#d6cfdc', glyph: 'moon',
+      quote: "Pas d'inquiétude, elle n'a pas souffert. Je m'en suis occupé moi-même, avec les honneurs. Tu veux t'asseoir ? J'ai du thé. Les liens morts finissent toujours par venir me voir." },
+    { id: 'vie', name: 'Albiaron', role: 'la Vie', mood: 'stressée et surchargée', color: '#8fe18c', glyph: 'drop',
+      quote: "Elle était vivante hier, je le jure ! Mais j'ai six cents milliards de choses à faire respirer et ta page n'était pas en haut de la pile. Pardon ! Pardon ! Je note !" },
+    { id: 'inconnu', name: 'Ignita', role: "l'Inconnu", mood: 'endormie et inconsciente', color: '#ff8a6a', glyph: 'q',
+      quote: "…zzz… une page ? …personne ne sait. Moi non plus. …zzz… ne me réveille pas, je suis en train de ne rien savoir." }
+  ];
+
+  var NS = 'http://www.w3.org/2000/svg';
+  function el(name, attrs, parent){
+    var e = document.createElementNS(NS, name);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(e);
+    return e;
+  }
+  function glyph(parent, type){
+    var g = el('g', {}, parent);
+    var c = 'currentColor';
+    if (type === 'void'){
+      el('circle', { r: 9, fill: 'none', stroke: c, 'stroke-width': 2.4, 'stroke-dasharray': '38 18', transform: 'rotate(-60)' }, g);
+    } else if (type === 'star'){
+      el('path', { d: 'M0,-12 L3,-3 L12,0 L3,3 L0,12 L-3,3 L-12,0 L-3,-3 Z', fill: c }, g);
+    } else if (type === 'hour'){
+      el('path', { d: 'M-8,-11 H8 L1.6,0 L8,11 H-8 L-1.6,0 Z', fill: 'none', stroke: c, 'stroke-width': 2.2, 'stroke-linejoin': 'round' }, g);
+    } else if (type === 'moon'){
+      el('path', { d: 'M4,-11 A11,11 0 1,0 4,11 A8,8 0 1,1 4,-11 Z', fill: c }, g);
+    } else if (type === 'drop'){
+      el('path', { d: 'M0,-12 C8,-3 9,3 0,12 C-9,3 -8,-3 0,-12 Z', fill: c }, g);
+    } else {
+      var t = el('text', { x: 0, y: 9, 'text-anchor': 'middle', fill: c, 'font-size': 28, 'font-family': "'Cormorant Garamond',Georgia,serif", 'font-weight': 600 }, g);
+      t.textContent = '?';
+    }
+  }
+
+  var orbsLayer = document.getElementById('orbs');
+  var R = 200, C = 300;
+  var rot = 0, target = null, sel = -1, paused = false;
+  var visited = {}, visitedCount = 0;
+
+  forces.forEach(function(f, i){
+    f.base = -Math.PI / 2 + i * Math.PI / 3;
+    var g = el('g', { class: 'orb', tabindex: '0', role: 'button', 'aria-pressed': 'false', 'aria-label': 'Interroger ' + f.name + ', ' + f.role }, orbsLayer);
+    g.style.color = f.color;
+    el('circle', { r: 46, fill: 'transparent' }, g);
+    var core = el('g', { class: 'core' }, g);
+    el('circle', { r: 30, fill: '#0a0814', stroke: 'currentColor', 'stroke-width': 2 }, core);
+    el('circle', { r: 22, fill: 'currentColor', opacity: .16 }, core);
+    glyph(core, f.glyph);
+    var lab = el('text', { class: 'lab', x: 0, y: 56, 'text-anchor': 'middle' }, g);
+    lab.textContent = f.name;
+    f.g = g;
+    g.addEventListener('click', function(){ choose(i); });
+    g.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); choose(i); }
+    });
+    g.addEventListener('mouseenter', function(){ paused = true; });
+    g.addEventListener('mouseleave', function(){ paused = false; });
+  });
+
+  function place(){
+    for (var i = 0; i < forces.length; i++){
+      var a = forces[i].base + rot;
+      var x = C + R * Math.cos(a), y = C + R * Math.sin(a);
+      forces[i].g.setAttribute('transform', 'translate(' + x.toFixed(2) + ' ' + y.toFixed(2) + ')');
+    }
+  }
+  function wrap(a){
+    while (a > Math.PI) a -= 2 * Math.PI;
+    while (a < -Math.PI) a += 2 * Math.PI;
+    return a;
+  }
+
+  /* Réponses */
+  var oracle = document.getElementById('oracle');
+  var who = document.getElementById('who');
+  var mood = document.getElementById('mood');
+  var quote = document.getElementById('quote');
+  var count = document.getElementById('count');
+  var fin = document.getElementById('final');
+  var DEF = {
+    who: "Aucune Force n'a encore répondu.",
+    mood: 'Touche une sphère pour l’interroger.',
+    quote: "Chacune gouverne une loi de l'existence : le Néant, la Création, le Temps, la Mort, la Vie, l'Inconnu. Toutes n'ont pas le même caractère."
+  };
+  var orbsEl = document.getElementById('orbs');
+
+  function setAccent(color, shatter){
+    root.style.setProperty('--accent', color);
+    root.classList.toggle('shatter', !!shatter);
+  }
+  function swap(){
+    oracle.classList.remove('show');
+    void oracle.offsetWidth;
+    oracle.classList.add('show');
+  }
+
+  function choose(i){
+    var f = forces[i];
+    if (sel === i){
+      sel = -1; target = null;
+      forces.forEach(function(o){ o.g.classList.remove('active'); o.g.setAttribute('aria-pressed', 'false'); });
+      orbsEl.classList.remove('has-active');
+      setAccent('#ffab00', false);
+      who.textContent = visitedCount === forces.length ? 'Les six ont répondu.' : DEF.who;
+      mood.textContent = DEF.mood;
+      quote.textContent = DEF.quote;
+      swap();
+      return;
+    }
+    sel = i;
+    forces.forEach(function(o, k){
+      o.g.classList.toggle('active', k === i);
+      o.g.setAttribute('aria-pressed', k === i ? 'true' : 'false');
+    });
+    orbsEl.classList.add('has-active');
+    var goal = -Math.PI / 2 - f.base;
+    if (reduce){ rot = goal; place(); target = null; }
+    else { target = rot + wrap(goal - rot); }
+    setAccent(f.color, f.id === 'neant');
+    who.textContent = f.name + ', ' + f.role;
+    mood.textContent = f.mood;
+    quote.textContent = f.quote;
+    if (!visited[f.id]){ visited[f.id] = true; visitedCount++; }
+    count.textContent = 'Forces interrogées : ' + visitedCount + ' sur ' + forces.length;
+    fin.hidden = visitedCount < forces.length;
+    swap();
+  }
+  window.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && sel !== -1) choose(sel);
+  });
+
+  /* Animation de l'orbite */
+  place();
+  if (!reduce){
+    var last = performance.now();
+    (function frame(now){
+      var dt = Math.min(.05, (now - last) / 1000);
+      last = now;
+      if (target !== null){
+        rot += (target - rot) * (1 - Math.exp(-dt * 3.4));
+        if (Math.abs(target - rot) < .0005) rot = target;
+      } else if (!paused){
+        rot += dt * 0.045;
+      }
+      place();
+      requestAnimationFrame(frame);
+    })(last);
+  }
+
+  /* Étoiles */
+  var cv = document.getElementById('stars');
+  var cx = cv.getContext('2d');
+  var w = 0, h = 0, stars = [];
+  function size(){
+    w = cv.width = window.innerWidth;
+    h = cv.height = window.innerHeight;
+    var n = Math.min(170, Math.floor(w * h / 9000));
+    stars = [];
+    for (var i = 0; i < n; i++){
+      stars.push({ x: Math.random() * w, y: Math.random() * h, r: Math.random() * 1.2 + .25, p: Math.random() * 6.28, s: Math.random() * .8 + .3 });
+    }
+  }
+  function draw(t){
+    cx.clearRect(0, 0, w, h);
+    for (var i = 0; i < stars.length; i++){
+      var s = stars[i];
+      var a = reduce ? .5 : .25 + .5 * Math.abs(Math.sin(t / 1000 * s.s + s.p));
+      cx.beginPath();
+      cx.arc(s.x, s.y, s.r, 0, 6.2832);
+      cx.fillStyle = 'rgba(242,229,196,' + a.toFixed(3) + ')';
+      cx.fill();
+    }
+    if (!reduce) requestAnimationFrame(draw);
+  }
+  size();
+  window.addEventListener('resize', function(){ size(); if (reduce) draw(0); });
+  draw(0);
+})();
+</script>
+</body>
+</html>
