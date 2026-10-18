@@ -19,10 +19,13 @@
                 text-align: center;
                 background-color: rgb(0, 55, 255);
                 color: white;
+                border-radius: 5px;
             }
             section {
                 background-color: rgba(89, 125, 255, 0.8);
                 margin: 40px;
+                padding: 2px;
+                border-radius: 5px;
             }
             p {
                text-indent: 40px;
@@ -32,7 +35,7 @@
                 color: black;
             }
             div {
-                margin: 10px;
+                margin: 8px;
             }
             .letter {
                 background-color: rgba(40, 86, 255, 0.7);
@@ -44,6 +47,7 @@
                 flex : 1;
                 background-color: rgba(40, 86, 255, 0.7);
                 margin-right: 10px;
+                border-radius: 5px;
             }
             .droite {
                 display: block;
@@ -56,12 +60,22 @@
                 bottom: 10px;      /* distance depuis le haut */
                 right: 20px;    /* ou left: 20px */
                 z-index: 1000;  /* pour rester au-dessus des autres éléments */
+                border-radius: 5px;
+                padding: 1px;
             }
             .menu {
                 position: fixed;
                 bottom: 40px;      /* distance depuis le haut */
                 right: 37px;    /* ou left: 20px */
                 z-index: 1000;  /* pour rester au-dessus des autres éléments */
+                border-radius: 5px;
+                padding: 1px;
+            }
+            .haut:hover {
+                background-color: rgb(96, 131, 255) !important;
+            }
+            .menu:hover {
+                background-color: rgb(96, 131, 255) !important;
             }
             .button {
                flex: 1;
@@ -69,6 +83,7 @@
                margin: 5px;
                color: white;
                text-decoration: none;
+               border-radius: 5px;
             }
             .button:hover {
                background-color: rgb(73, 113, 255);
@@ -440,49 +455,167 @@
                     <h3><u>Les Types</u></h3>
                     <table>
                         <tr>
-                            <th>Types (du plus petit, au plus important)</th>
+                            <th>Types (du plus petit, au plus grand)</th>
                             <th>Caractéristiques</th>
                             <th>Utilisations habituelles</th>
+                            <th>Taille d'équipage (marins/soldats...)</th>
+                            <th>Vitesse</th>
                         </tr>
                         <tr>
-                            <td>Le Sloop / le Chebec</td>
+                            <td>La Chaloupe / le Canot</td>
+                            <td>Un seul mât ou rames, très petit.</td>
+                            <td>Annexe pour accoster, transport entre navire, port et plages.</td>
+                            <td>4 marins</td>
+                            <td>3 noeuds soit 6 km/h</td>
+                        </tr>
+                        <tr>
+                            <td>La Barque de pêche / le Thonier</td>
+                            <td>Un à deux mâts, faible tirant d’eau, grands viviers ou filets.</td>
+                            <td>Petit bâtiment de pêche et de cueillette côtière.</td>
+                            <td>6 marins</td>
+                            <td>6 noeuds soit 11 km/h</td>
+                        </tr>
+                        <tr>
+                            <td>Le Cotre</td>
+                            <td>Un mât, coque fine, très rapide.</td>
+                            <td>Garde-côtes, douaniers, contrebande. Utilisation proche du sloop à petite échelle.</td>
+                            <td>15 marins</td>
+                            <td>12 noeuds soit 22 km/h</td>
+                        </tr>
+                        <tr>
+                            <td>Le Sloop</td>
                             <td>Un seul mât (parfois deux). Très petit, léger et extrêmement agile.</td>
                             <td>Navire de prédilection des pirates. Peut remonter les rivières pour se cacher et s'approcher des proies par surprise.</td>
+                            <td>30 à 50 marins</td>
+                            <td>11 noeuds soit 20.5 km/h</td>
+                        </tr>
+                        <tr>
+                            <td>Le Lougre</td>
+                            <td>Deux à trois mâts, voiles à quatre côtés (lougre) très manoeuvrantes.</td>
+                            <td>Chasseurs de pirates et contrebandiers. Utilisation proche du sloop un peu plus grand.</td>
+                            <td>25 marins</td>
+                            <td>11 noeuds soit 20.5 km/h</td>
                         </tr>
                         <tr>
                             <td>La Goélette / le Schooner</td>
                             <td>Deux mâts minimum, voiles auriques (parallèles à l'axe du bateau, et non carrées), permettant de remonter très près du vent.</td>
                             <td>Transport rapide de marchandises précieuses, messagerie militaire, piraterie et garde-côtes.</td>
+                            <td>30 marins</td>
+                            <td>12 noeuds soit 22 km/h</td>
                         </tr>
                         <tr>
-                            <td>Le Brick / le Brig / le Brigantin</td>
+                            <td>Le Brick / le Brig</td>
                             <td>Deux mâts équipés de voiles carrées. Plus grand qu'un sloop mais plus petit qu'une frégate. Excellent compromis entre puissance de feu (10 à 20 canons) et vitesse.</td>
                             <td>Très populaire pour le commerce, la course et les patrouilles militaires.</td>
+                            <td>40 à 80 marins</td>
+                            <td>10 noeuds soit 19 km/h</td>
+                        </tr>
+                        <tr>
+                            <td>Le Brigantin</td>
+                            <td>Deux mâts, le premier à voiles carrées, le second aurique.</td>
+                            <td>Plus maniable qu’un brick. Piraterie, commerce rapide.</td>
+                            <td>40 marins</td>
+                            <td>10 noeuds soit 19 km/h</td>
+                        </tr>
+                        <tr>
+                            <td>Le Chébec</td>
+                            <td>Trois mâts à voiles latines, avec des rames.</td>
+                            <td>Rapide, bas sur l’eau. Chasseurs de pirates et pirates en eaux calmes ou côtières.</td>
+                            <td>150 marins (avec les rameurs)</td>
+                            <td>11 noeuds soit 20.5 km/h</td>
+                        </tr>
+                        <tr>
+                            <td>La Flûte</td>
+                            <td>Trois mâts, coque ventrue et très spacieuse, peu armée.</td>
+                            <td>Marchandises peu précieuses.</td>
+                            <td>15 marins</td>
+                            <td>6 noeuds soit 11 km/h</td>
+                        </tr>
+                        <tr>
+                            <td>La Barque (trois-mâts)</td>
+                            <td>Trois mâts, voiles carrées sauf le dernier mât (aurique).</td>
+                            <td>Commerce de longue distance.</td>
+                            <td>30 marins</td>
+                            <td>8 noeuds soit 15 km/h</td>
                         </tr>
                         <tr>
                             <td>La Corvette</td>
                             <td>Trois mâts, plus petite et moins armée qu'une frégate (généralement moins de 20 canons, tous sur un seul pont découvert).</td>
                             <td>Éclaireur pour les flottes militaires, transport de messages urgents et missions de reconnaissance.</td>
+                            <td>100 marins</td>
+                            <td>11 noeuds soit 20.5 km/h</td>
                         </tr>
                         <tr>
                             <td>La Frégate</td>
                             <td>Trois mâts, de taille moyenne, conçue pour la vitesse et l'endurance. Canons alignés sur un seul pont couvert (de 28 à 44 canons).</td>
                             <td>Navire le plus polyvalent. Chasse, protection des routes commerciales, duels singuliers et éclaireurs.</td>
+                            <td>250 marins</td>
+                            <td>13 noeuds soit 24 km/h</td>
                         </tr>
                         <tr>
                             <td>Le Galion</td>
                             <td>Grand navire à trois ou quatre mâts, hauts châteaux (les structures surélevées à l'avant et à l'arrière). Très lourd, ventru, et difficile à manœuvrer face au vent. Armement important (30 à 60 canons), cales immenses.</td>
                             <td>Transport des richesses (or, argent, épices...) en grandes quantités sur des longues ou courtes distances. Leurs châteaux élevés servent de forteresses pour repousser les abordages.</td>
+                            <td>150 marins</td>
+                            <td>6 noeuds soit 11 km/h</td>
                         </tr>
                         <tr>
                             <td>L'Indiaman</td>
                             <td>Navire marchand géant, conçu pour ressembler à un navire de guerre afin de décourager les attaquants. Lourdement armé, grandes cales.</td>
                             <td>Commerce à longue distance (thé, soie, épices...).</td>
+                            <td>120 marins</td>
+                            <td>7 noeuds soit 13 km/h</td>
                         </tr>
                         <tr>
                             <td>Le Vaisseau de ligne</td>
                             <td>Plus grands navires de guerre (trois-mâts). Deux à trois ponts fermés de canons (artillerie lourde de 64 à plus de 100 canons). Lourd, lent, armement extrême.</td>
-                            <td>Utile pour écraser les flottes malgré un sous nombre, navire de guerre ultime.</td>
+                            <td>Utile pour écraser les flottes malgré un sous-nombre, navire de guerre ultime.</td>
+                            <td>700 marins</td>
+                            <td>8 noeuds soit 17 km/h</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>Types de navires spécialisés</th>
+                            <th>Caractéristiques</th>
+                            <th>Spécialisation(s)</th>
+                            <th>Taille d'équipage</th>
+                            <th>Vitesse</th>
+                        </tr>
+                        <tr>
+                            <td>Le Brûlot</td>
+                            <td>Vieux navire (n'importe quel type) rempli de combustible, lancé vers une flotte.</td>
+                            <td>Incendier des flottes.</td>
+                            <td>5 marins</td>
+                            <td>6 noeuds soit 11 km/h</td>
+                        </tr>
+                        <tr>
+                            <td>La Galiote à bombes</td>
+                            <td>Deux mâts, renforcée pour porter des mortiers.</td>
+                            <td>Bombardement de ports et de forts.</td>
+                            <td>70 marins</td>
+                            <td>7 noeuds soit 13 km/h</td>
+                        </tr>
+                        <tr>
+                            <td>Le Chasseur</td>
+                            <td>Robuste, avec chaloupes embarquées.</td>
+                            <td>Chasse aux grands monstres marins.</td>
+                            <td>40 marins</td>
+                            <td>9 noeuds soit 17 km/h</td>
+                        </tr>
+                        <tr>
+                            <td>Le Navire-hôpital</td>
+                            <td>Ancien marchand ou bâtiment aménagé, pavillon neutre.</td>
+                            <td>Soins aux blessés, intouchable en théorie.</td>
+                            <td>60 marins et 40 patients</td>
+                            <td>6 noeuds soit 11 km/h</td>
+                        </tr>
+                        <tr>
+                            <td>Le Navire-prison</td>
+                            <td>Quatre mâts (deux à voiles auriques et deux à voiles carrées). Lourdement armé (de 60 à 80 canons sur deux ponts couverts). Pont découvert équipé pour des exécutions de prisonniers. Deux cales remplies de cellules de prison.</td>
+                            <td>Transport de prisonniers entre deux prisons terrestres ou de bateau à prison terrestre. Exécution d'urgence. Récupération de prisonniers de guerre.</td>
+                            <td>200 marins et 100 prisonniers</td>
+                            <td>7 noeuds soit 13 km/h</td>
                         </tr>
                     </table>
                 </div>
