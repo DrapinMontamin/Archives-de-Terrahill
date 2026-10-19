@@ -48,7 +48,7 @@
             </p>
         </nav>
         <main>
-        <nav class="gauche">
+        <nav class="gauche" id="index">
             <ul>- Raccourcis :
                 <li><a href="#5familles">Les Familles Majeures</a></li>
                 <li><a href="#5famillesInf">Les Familles Inférieures (criminelles)</a></li>
@@ -189,7 +189,7 @@
             </ul>
             <ul id="y">- Y :
                 <li><a href="#Yann2">Yann Damakos</a></li>
-                <li><a href="#Yann">Yann Sorel--Pailhes</a>(Paysan)</li>
+                <li><a href="#Yann">Yann Sorel--Pailhes (le Pégu)</a></li>
             </ul>
             <ul id="z">- Z :
                 <li><a href="#Zeleth">Zeleth Blanc-pain</a></li>
@@ -226,6 +226,79 @@
                         <td>Familles classiques</td>
                     </tr>
                 </table>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h3><u>Les Niveaux de vie</u></h3>
+                    <table>
+                        <tr>
+                            <th>Niveaux de vie</th>
+                            <th>Salaire journalier</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <th>Hors catégorie</th>
+                            <td>Variant</td>
+                            <td>C'est le niveau de vie des vagabonds, des travailleurs occasionel, de ceux qui arrivent à vivre en dehors du système établi.</td>
+                        </tr>
+                        <tr>
+                            <th>Misérable</th>
+                            <td>Aucun</td>
+                            <td>Mendiant dans la rue, mangeant des restes. Peu de différences avec un cadavre.</td>
+                        </tr>
+                        <tr>
+                            <th>Miséreux</th>
+                            <td>Inférieur à 5 PA</td>
+                            <td>Précarité forte, taudis. Milieu de vie insalubre et fréquentations douteuses.</td>
+                        </tr>
+                        <tr>
+                            <th>Pauvre</th>
+                            <td>Inférieur à 2 PE</td>
+                            <td>Vêtements troués, nourriture de mauvaise qualité. Strict minimum pour survivre.</td>
+                        </tr>
+                        <tr>
+                            <th>Modeste</th>
+                            <td>Inférieur 5 PE</td>
+                            <td>Vie correcte, nourriture de base, vêtements relativement neufs. Ce niveau est celui des ouvriers, soldats, apprentis et prêtres en général.</td>
+                        </tr>
+                        <tr>
+                            <th>Aisé</th>
+                            <td>Inférieur ou égal à 1 PO et 2 PE</td>
+                            <td>Vie saine, nourriture correcte, vêtements neufs. Salaire suffisant pour s'autoriser des débordements sans trop de conséquences.</td>
+                        </tr>
+                        <tr>
+                            <th>Bien aisé</th>
+                            <td>Supérieur à 1 PO et 3 PE</td>
+                            <td>Vie saine, nourriture de bonne qualité, vêtements neufs. Salaire élevé au point d'en laisser de côté.</td>
+                        </tr>
+                        <tr>
+                            <th>Très aisé</th>
+                            <td>Supérieur à 5 PO</td>
+                            <td>Vie saine, nourriture variée et de bonne qualité, beaux vêtements neufs en quantité. Loisirs et investissements sans difficulté. Niveau de vie d'un militaire haut gradé, d'un marchand ou d'un petit seigneur local.</td>
+                        </tr>
+                        <tr>
+                            <th>Luxueux</th>
+                            <td>Supérieur à 10 PO</td>
+                            <td>Vie très saine, nourriture de très bonne qualité et variée, vêtementx luxueux. C'est le niveau de vie d'un marchand régional ou d'un seigneur influent.</td>
+                        </tr>
+                        <tr>
+                            <th>Riche</th>
+                            <td>Supérieur à 35 PO</td>
+                            <td>Vie excellente, nourriture excellente et cuisiniers renommés, vêtements luxueux. C'est le niveau de vie d'un marchand national ou d'un seigneur puissant.</td>
+                        </tr>
+                        <tr>
+                            <th>Aristocrate</th>
+                            <td>Supérieur à 100 PO</td>
+                            <td>Vie excellente, nourriture excellente et cuisiniers renommés, vêtements luxueux. Plusieurs grandes maisons.</td>
+                        </tr>
+                        <tr>
+                            <th>Puissance économique</th>
+                            <td>Supérieur à 3000 PO</td>
+                            <td>Agis selon son humeur sans que cela n'est d'impact sur son portefeuille.</td>
+                        </tr>
+                    </table>
+                    <p>Quelques valeurs : La Banque Générale génère environ 1.000.000 PO par jour en étant une entreprise mondiale. Un petit épicier local génère 3 PO par jour environ et en gagne 6 PE tandis que le seigneur d'une ville moyenne gagne 6 PO</p>
                 </div>
             </section>
             <section id="5familles" class="inter">
@@ -393,9 +466,22 @@
             </section>
             <section id="Amanodel">
             <div>
-                <h3><u>Les Amanodel (Famille Mineure de rang 3) (Demi-elfes)</u></h3>
+                <h3><u>Les Amanodel</u></h3>
+                <ul>
+                    <li><b>Race majoritaire : </b>Elfe</li>
+                    <li><b>Niveau de vie moyen : </b>Aristocrate</li>
+                    <li><b>Rang familiale : </b>1 (récent, anciennement rang 4)</li>
+                </ul>
                 <div id="Quarion">
                     <b>Quarion Amanodel</b>
+                    <ul>
+                        <li><b>Race : </b>Demi-elfe</li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Roi du <a href="terrahill-kiir-terrahill.html#Obscures">Royaume des Obscures</a>, Chef des <a href="terrahill-orga.html#Sans-visage">Sans-visage</a></li>
+                        <li><b>Niveau de vie : </b>Puissance économique</li>
+                    </ul>
                     <p>Quarion Amanodel est né d'un père elfe et d'une mère humaine dans un petit village elfe de l'autre monde (on verra plus tard). Au bout de quelques années de vie 
                         paisible, le village a été attaqué sans raison apparente par une horde d'orcs. Quarion a dû s'enfuir seul après avoir vu son village se faire décimer et dévorer. 
                         Mais malheureusement pour lui, les demi-elfes ne sont pas bien vu. Quarion a appris à se déguiser, à vivre de vol et d'arnaque contre les riches sous de nombreuses 
@@ -410,6 +496,14 @@
                 </div>
                 <div id="Edgar">
                     <b>Edgar Amanodel</b>
+                    <ul>
+                        <li><b>Race : </b>Changelin</li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Chef et Capitaine du <a href="terrahill-orga.html#Kharadron">Kharadron</a>, marchand, marin, pirate</li>
+                        <li><b>Niveau de vie : </b>Riche</li>
+                    </ul>
                     <p>
                         Edgar Amanodel est le frère de Quarion, mais ils n'ont pas le même père. Edgar est né environ 20 avant son frère de parents elfe. C'est gène ont muté, c'est ainsi qu'il est devenu un changelin, 
                         mais son éspérance de vie reste de 700 ans. Après avoir grandi avec ses parents, il partit à l'âge 18 ans pour faire une école de magie et y apprendre l'invocation ou il devint ami avec <a href="#Pyntle">Pyntle Montamin</a>. Après ne pas avoir reçu de nouvelles
@@ -420,7 +514,15 @@
                     </p>
                 </div>
                 <div id="Liora">
-                    <b>Liora Amanodel (Lis-Blanc de naissance) (Elfe)</b>
+                    <b>Liora Amanodel (Lis-Blanc de naissance)</b>
+                    <ul>
+                        <li><b>Race : </b>Elfe</li>
+                        <li><b>Sexe : </b>Femme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Reine du <a href="terrahill-kiir-terrahill.html#Obscures">Royaume des Obscures</a></li>
+                        <li><b>Niveau de vie : </b>Puissance économique (aristocrate + puissance économique de <a href="#Quarion">Quarion</a>)</li>
+                    </ul>
                     <p>
                         Liora est née <a href="#Lis-Blanc">Lis-Blanc</a>, fille du <a href="#Léon">roi</a> du <a href="terrahill-kiir-terrahill.html#Palann">Palann</a>, elle a grandit enfermée dans le chateau de son père. Mais son rêve, son rêve le plus profond,
                          celui qu'elle gardait près de son coeur était de voyager, de sortir de sa vie de princesse enfermée. Elle voyait les jours passés un par un, tous plus long les uns que les autres,
@@ -435,27 +537,69 @@
             </section>
             <section>
             <div>
-                <h3><u>Les Créateurs (Shaii-kinn)</u></h3>
+                <h3><u>Les Tilior, les Créateurs</u></h3>
+                <ul>
+                    <li><b>Race majoritaire : </b><a href="terrahill-exclu.html#Shaii-kinn">Shaii-kinn</a></li>
+                    <li><b>Niveau de vie moyen : </b>Luxueux</li>
+                    <li><b>Rang familiale : </b>1</li>
+                </ul>
                 <p>Les Créateurs sont bel et bien de la même famille, ce sont trois jumeaux avec qui Elinnior s'est lié d'amitié.</p>
                 <div id="Tiaorhill">
-                    <b><u>Tiaorhill (Anciennement Tiaor)</u></b>
+                    <b><u>Tiaorhill (Anciennement Tiaor Tilior)</u></b>
+                    <ul>
+                        <li><b>Race : </b><a href="terrahill-exclu.html#Shaii-kinn">Shaii-kinn</a></li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b>-15 av.R. (991 ap.C.)</li>
+                        <li><b>Fonction(s) : </b><a href="terrahill-orga.html#Createurs">Créateur</a></li>
+                        <li><b>Niveau de vie : </b>Luxueux</li>
+                    </ul>
                     <p></p>
                 </div>
                 <div id="Elnnorhill">
-                    <b><u>Elnnorhill (Anciennement Elnnor)</u></b>
+                    <b><u>Elnnorhill (Anciennement Elnnor Tilior)</u></b>
+                    <ul>
+                        <li><b>Race : </b><a href="terrahill-exclu.html#Shaii-kinn">Shaii-kinn</a></li>
+                        <li><b>Sexe : </b>Femme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b>-15 av.R. (991 ap.C.)</li>
+                        <li><b>Fonction(s) : </b><a href="terrahill-orga.html#Createurs">Créateur</a></li>
+                        <li><b>Niveau de vie : </b>Luxueux</li>
+                    </ul>
                     <p></p>
                 </div>
                 <div id="Baliorhill">
-                    <b><u>Baliorhill (Anciennement Balior)</u></b>
+                    <b><u>Baliorhill (Anciennement Balior Tilior)</u></b>
+                    <ul>
+                        <li><b>Race : </b><a href="terrahill-exclu.html#Shaii-kinn">Shaii-kinn</a></li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b>-15 av.R. (991 ap.C.)</li>
+                        <li><b>Fonction(s) : </b><a href="terrahill-orga.html#Createurs">Créateur</a></li>
+                        <li><b>Niveau de vie : </b>Luxueux</li>
+                    </ul>
                     <p></p>
                 </div>
             </div>
             </section>
             <section id="Demetrian">
             <div>
-                <h3><u>Les Demetrian (Famille Mineure) (Humain)</u></h3>
+                <h3><u>Les Demetrian</u></h3>
+                <ul>
+                    <li><b>Race majoritaire : </b>Humain</li>
+                    <li><b>Niveau de vie moyen : </b>Aristocrate</li>
+                    <li><b>Rang familiale : </b>1</li>
+                </ul>
                 <div id="Terrkion">
                     <b>Terrkion Demetrian, le héros de légende</b>
+                    <ul>
+                        <li><b>Race : </b>Humain</li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Mort</li>
+                        <li><b>Date de naissance : </b>-525 av.R. (481 ap.C.)</li>
+                        <li><b>Fonction(s) : </b>Guerrier et 1er roi de <a href="terrahill-kiirbold.html#Bretonn">Bretonn</a></li>
+                        <li><b>Niveau de vie : </b>Aristocrate</li>
+                    </ul>
                     <p>
                         Terrkion, le héros de légende, est le plus grand guerrier de l'ère du Chaos. Il a, à lui seul, tenu tête à <a href="terrahill-pantheon.html#Tharizdunn">Tharizdunn</a> pendant plusieurs heures de combat
                         sauvage avant d'enfin parvenir à le vaincre. Pour arriver à une telle puissance, le héros de légende a combattu de nombreux monstres et créatures atteint par la 
@@ -464,24 +608,36 @@
                 </div>
                 <div id="Titudd">
                     <b>Titudd Demetrian ("L'Archange")</b>
-                    <p></p>
-                </div>
-            </div>
-            </section>
-            <section id="De_Ehrn">
-            <div>
-                <h3><u>Les De Ehrn (Humain)</u></h3>
-                <div id="Lucia">
-                    <b>Lucia De Ehrn</b>
+                    <ul>
+                        <li><b>Race : </b>Humain</li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Roi de <a href="terrahill-kiirbold.html#Bretonn">Bretonn</a></li>
+                        <li><b>Niveau de vie : </b>Aristocrate</li>
+                    </ul>
                     <p></p>
                 </div>
             </div>
             </section>
             <section id="Doleïonn">
             <div>
-                <h3><u>Les Doleïonn (Humain (en général))</u></h3>
+                <h3><u>Les Doleïonn</u></h3>
+                <ul>
+                    <li><b>Race majoritaire : </b>Intelligence Biologique</li>
+                    <li><b>Niveau de vie moyen : </b>Bien aisé</li>
+                    <li><b>Rang familiale : </b>1</li>
+                </ul>
                 <div id="Ibraxann">
-                    <b>Ibraxann Doleïonn, dit "Le Nécromancien aigri" (humain)</b>
+                    <b>Ibraxann Doleïonn, dit "Le Nécromancien aigri"</b>
+                    <ul>
+                        <li><b>Race : </b>Humain (ou Intelligence Biologique)</li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Biologiste expert</li>
+                        <li><b>Niveau de vie : </b>Bien aisé</li>
+                    </ul>
                     <p>
                         Ibraxann est un expert en biologie. Il suffit de cette phrase pour le connaître. En effet, Ibraxann Doleïonn, le seul et unique membre de sa famille,
                         est un grand biologiste. Il est d'ailleurs le plus grand des biologiste. Son intellect est tel qu'il remet les lois de la magie en question et qu'il
@@ -512,6 +668,14 @@
                 </div>
                 <div id="Elinndiel">
                     <b>Elinndiel Doleïonn (de "mariage") (Intelligence Biologique)</b>
+                    <ul>
+                        <li><b>Race : </b>Artificiel (Intelligence Biologique)</li>
+                        <li><b>Sexe : </b>Femme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Aucune</li>
+                        <li><b>Niveau de vie : </b>Bien aisé (aucun revenu + bien aisé de <a href="#Ibraxann">Ibraxann</a>)</li>
+                    </ul>
                     <p>
                         Elinndiel est une femme créé de toute pièce par <a href="#Ibraxann">Ibraxann</a>. Elle possède néanmoins une âme, une conscience et des émotions réelles qu'<a href="#Ibraxann">Ibraxann</a>
                         ne peut pas contrôler. A sa création, <a href="#Ibraxann">Ibraxann</a> lui a donné une quantité de Thaumion équivalente à celle d'un humain, elle peut donc pratiquer la magie malgré le fait qu'elle soit considérée
@@ -523,9 +687,33 @@
             </section>
             <section id="Ibalaan">
             <div>
-                <h3><u>Les Ibalaan (Shaii-kinn)</u></h3>
+                <h3><u>Les Ibalaan</u></h3>
+                <ul>
+                    <li><b>Race majoritaire : </b><a href="terrahill-exclu.html#Shaii-kinn">Shaii-kinn</a></li>
+                    <li><b>Niveau de vie moyen : </b>Aristocrate</li>
+                    <li><b>Rang familiale : </b>2</li>
+                </ul>
+                <div id="Elinnior" style="display: block;">
+                    <b>Elinnior Ibalaan, le Maître des mondes, la Force supérieure de la Création</b>
+                    <ul>
+                        <li><b>Race : </b>Aucune (Force supérieure)</li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b>La Création</li>
+                        <li><b>Fonction(s) : </b>Divinité de haut rang, soldat <a href="terrahill-exclu.html#Shaii-kinn">Nerr-Shaii</a></li>
+                        <li><b>Niveau de vie : </b>Aristocrate</li>
+                    </ul>
+                </div>
                 <div id="Rieur">
-                <b>Calgor Ibalaan, renommé Umag Bas-sang le Rieur</b>
+                    <b>Calgor Ibalaan, renommé Umag Bas-sang le Rieur</b>
+                    <ul>
+                        <li><b>Race : </b><a href="terrahill-exclu.html#Shaii-kinn">Shaii-kinn</a></li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Mort</li>
+                        <li><b>Date de naissance : </b>2008 ap.R.</li>
+                        <li><b>Fonction(s) : </b>Guerrier, aventurier</li>
+                        <li><b>Niveau de vie : </b>Hors catégorie</li>
+                    </ul>
                     <p>
                         Umag Bas-sang est né dans la cité guerrière d'Achkadagg sur Shaii-Terra. Il a été capturé avec sa soeur jumelle à l'âge de 2 ans, leur autre frère, ils sont des triplets, a réussi à en échapper.
                         Ils ont ensuite été fait esclave par les <a href="#Tilgalinn">Tilgalinn</a> où ils ont subit des relations charnelles non consenties, des violences et toutes les choses que les horribles maîtres
@@ -566,12 +754,28 @@
                 </div>
                 <div id="MJ">
                     <b>Tialgor Ibalaan, dit "Le MJ" pour Maître de jeu</b>
+                    <ul>
+                        <li><b>Race : </b><a href="terrahill-exclu.html#Shaii-kinn">Shaii-kinn</a></li>
+                        <li><b>Sexe : </b>Femme devenue Homme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b>2008 ap.R.</li>
+                        <li><b>Fonction(s) : </b>Seigneur de l'Île des Rêves</li>
+                        <li><b>Niveau de vie : </b>Aristocrate</li>
+                    </ul>
                     <p>
 
                     </p>
                 </div>
                 <div id="Stratege">
                     <b>Ilyal Ibalaan, dit "Le Stratège"</b>
+                    <ul>
+                        <li><b>Race : </b><a href="terrahill-exclu.html#Shaii-kinn">Shaii-kinn</a></li>
+                        <li><b>Sexe : </b>Femme</li>
+                        <li><b>Etat actuel : </b>Mort</li>
+                        <li><b>Date de naissance : </b>2008 ap.R.</li>
+                        <li><b>Fonction(s) : </b>Esclave</li>
+                        <li><b>Niveau de vie : </b>Misérable</li>
+                    </ul>
                     <p>
 
                     </p>
@@ -580,9 +784,23 @@
             </section>
             <section id="Morléïn">
             <div>
-                <h3><u>Les Morléïn (<i>à déterminer</i>)</u></h3>
+                <h3><u>Les Morléïn</u></h3>
+                <ul>
+                    <li><b>Race majoritaire : </b>Gobelours</li>
+                    <li><b>Niveau de vie moyen : </b>Luxueux</li>
+                    <li><b>Rang familiale : </b>3</li>
+                    <li><b>Spécificité(s) : </b>Criminel donc non consulté par les <a href="#5familles">5 Familles</a></li>
+                </ul>
                 <div id="Vannatu">
                     <b>Vannatu Morléïn</b>
+                    <ul>
+                        <li><b>Race : </b>Gobelours</li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Dirigeant de <a href="terrahill-kiir-terrahill.html#Port_pirate">Port pirate</a>, pirate</li>
+                        <li><b>Niveau de vie : </b>Luxueux</li>
+                    </ul>
                     <p>
                         On sait peu de choses sur Vannatu Morléïn. Nous savons qu'il dirige la mafia pirate de <a href="terrahill-kiir-terrahill.html#Palaw">l'île Palaw</a>. Mais très peu de choses sur son identité ne sont révélées. Il semblerai qu'il ai prêté allégeance à un culte, mais nous ne savons pas lequel, ou même si ce culte est référencé dans les <a href="../index.html">Archives publiques</a>.
                     </p>
@@ -591,29 +809,82 @@
             </section>
             <section id="Montamin">
             <div>
-                <h3><u>Les Montamin (Famille Mineure de rang 1)</u></h3>
+                <h3><u>Les Montamin</u></h3>
+                <ul>
+                    <li><b>Race majoritaire : </b><i>à déterminer</i></li>
+                    <li><b>Niveau de vie moyen : </b>Bien aisé</li>
+                    <li><b>Rang familiale : </b>1</li>
+                </ul>
                 <div id="Alston">
                     <b>Alston (Massiges) Montamin</b>
+                    <ul>
+                        <li><b>Race : </b>Gnome</li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Plus ou moins Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Dirigeant de <a href="terrahill-kiir-terrahill.html#Lihènn">Lihènn</a>, nécromancien</li>
+                        <li><b>Niveau de vie : </b>Aristocrate</li>
+                    </ul>
                     <p></p>
                 </div>
                 <div id="Alric'he">
                     <b>Alric'he Montamin</b>
+                    <ul>
+                        <li><b>Race : </b>Gnome</li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Héritier des Montamin, alchimiste renommé, marchand, scientifique et aventurier</li>
+                        <li><b>Niveau de vie : </b>Puissance économique</li>
+                    </ul>
                     <p></p>
                 </div>
                 <div id="Drapin">
                     <b>Drapin Montamin</b>
+                    <ul>
+                        <li><b>Race : </b>Gnome</li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Grand tavernier de <a href="terrahill-kiir-terrahill.html#Dralehinn">Dralehinn</a></li>
+                        <li><b>Niveau de vie : </b>Aristocrate</li>
+                    </ul>
                     <p></p>
                 </div>
                 <div id="Pyntle">
                     <b>Pyntle Montamin</b>
+                    <ul>
+                        <li><b>Race : </b>Gnome</li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>1er Grand érudit du <a href="terrahill-kiir-terrahill.html#Grand_conservatoire">Grand Conservatoire</a>, artificier</li>
+                        <li><b>Niveau de vie : </b>Puissance économique</li>
+                    </ul>
                     <p></p>
                 </div>
                 <div id="Fandell">
                     <b>Fandell Montamin</b>
+                    <ul>
+                        <li><b>Race : </b>Gnome</li>
+                        <li><b>Sexe : </b>Femme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Dirigeant de <a href="terrahill-kiir-terrahill.html#Lihènn">Lihènn</a>, magicien</li>
+                        <li><b>Niveau de vie : </b>Aristocrate</li>
+                    </ul>
                     <p></p>
                 </div>
                 <div id="Feïnn">
                     <b>Feïnn Montamin</b>
+                    <ul>
+                        <li><b>Race : </b>Gnome</li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Kiir-Archemental</li>
+                        <li><b>Niveau de vie : </b>Aristocrate</li>
+                    </ul>
                     <p>
                         <i>"Il criait trop fort pour quelqu’un qui voulait être obéi. Puis j’ai voulu voir s’il saignait comme les autres."</i>
                         <br><br>Ce sont les seuls mots que Feïnn prononça après avoir tué son père.
@@ -638,28 +909,70 @@
                 </div>
                 <div id="Lyriel">
                     <b>Lyriel Montamin (morte avant de devenir une <a href="#Néïmal">Néïmal</a>)</b>
+                    <ul>
+                        <li><b>Race : </b>Gnome</li>
+                        <li><b>Sexe : </b>Femme</li>
+                        <li><b>Etat actuel : </b>Mort</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Ancien 1er Grand érudit du <a href="terrahill-kiir-terrahill.html#Grand_conservatoire">Grand Conservatoire</a></li>
+                        <li><b>Niveau de vie : </b>Puissance économique</li>
+                    </ul>
                     <p></p>
                 </div>
                 <div id="Iris">
                     <b>Iris Montamin (Nylienn de naissance)</b>
+                    <ul>
+                        <li><b>Race : </b><i>à déterminer</i></li>
+                        <li><b>Sexe : </b>Femme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Haut gradé de la <a href="terrahill-orga.html#MiliceC2">milice du conservatoire</a></li>
+                        <li><b>Niveau de vie : </b>Aristocrate (très aisé + aristocrate de <a href="#Pyntle">Pyntle Montamin</a>)</li>
+                    </ul>
                     <p></p>
                 </div>
             </div>
             </section>
             <section id="Olivier">
             <div>
-                <h3><u>Les Olivier (<i>à déterminer</i>)</u></h3>
+                <h3><u>Les Olivier</u></h3>
+                <ul>
+                    <li><b>Race majoritaire : </b><i>à déterminer</i></li>
+                    <li><b>Niveau de vie moyen : </b>Bien aisé</li>
+                    <li><b>Rang familiale : </b>3</li>
+                </ul>
                 <div id="Thomas">
                     <b>Thomas Olivier</b>
+                    <ul>
+                        <li><b>Race : </b><i>à déterminer</i></li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Chef de la <a href="terrahill-orga.html#MiliceD">Milice de Dahrr</a></li>
+                        <li><b>Niveau de vie : </b>Bien aisé</li>
+                    </ul>
                     <p></p>
                 </div>
             </div>
             </section>
             <section id="Lis-Blanc">
             <div>
-                <h3><u>Les Lis-Blanc (Elfes)</u></h3>
+                <h3><u>Les Lis-Blanc</u></h3>
+                <ul>
+                    <li><b>Race majoritaire : </b>Elfe</li>
+                    <li><b>Niveau de vie moyen : </b>Aristocrate</li>
+                    <li><b>Rang familiale : </b>2</li>
+                </ul>
                 <div id="Léon">
                     <b>Léon Lis-Blanc</b>
+                    <ul>
+                        <li><b>Race : </b>Elfe</li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Mort</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Roi de l'ancien <a href="terrahill-kiir-terrahill.html#RPalann">Royaume du Palann</a></li>
+                        <li><b>Niveau de vie : </b>Aristocrate</li>
+                    </ul>
                     <p>
                         Léon Lis-Blanc est le père de <a href="#Liora2">la princesse Liora</a>. Son règne a été long et il fut un bon roi. Si bon que le royaumes était le plus juste de Terrahill. Malheureusement, à sa mort,
                          <a href="#Quarion">Quarion</a> marié à sa fille ne pu hériter du throne et fut contraint à rester dans sa région pour la survit de <a href="Liora">Liora</a>.
@@ -667,6 +980,14 @@
                 </div>
                 <div id="Liora2">
                     <b>Liora Lis-Blanc (Amanodel de mariage)</b>
+                    <ul>
+                        <li><b>Race : </b>Elfe</li>
+                        <li><b>Sexe : </b>Femme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Reine du <a href="terrahill-kiir-terrahill.html#Obscures">Royaume des Obscures</a></li>
+                        <li><b>Niveau de vie : </b>Puissance économique (aristocrate + puissance économique de <a href="#Quarion">Quarion</a>)</li>
+                    </ul>
                     <p>
                         Liora est née <a href="#Lis-Blanc">Lis-Blanc</a>, fille du <a href="#Léon">roi</a> du <a href="terrahill-kiir-terrahill.html#Palann">Palann</a>, elle a grandit enfermée dans le chateau de son père. Mais son rêve, son rêve le plus profond,
                          celui qu'elle gardait près de son coeur était de voyager, de sortir de sa vie de princesse enfermée. Elle voyait les jours passés un par un, tous plus long les uns que les autres,
@@ -681,9 +1002,22 @@
             </section>
             <section id="Néïmal">
             <div>
-                <h3><u>Les Néïmal (Humain)</u></h3>
+                <h3><u>Les Néïmal</u></h3>
+                <ul>
+                    <li><b>Race majoritaire : </b>Humain</li>
+                    <li><b>Niveau de vie moyen : </b>Riche</li>
+                    <li><b>Rang familiale : </b>3 (récent, anciennement 4)</li>
+                </ul>
                 <div id="Fley">
                     <b>Fley Néïmal (dit l'ensorceleur)</b>
+                    <ul>
+                        <li><b>Race : </b>Humain</li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Dirigeant de <a href="terrahill-kiir-terrahill.html#Lihènn">Lihènn</a></li>
+                        <li><b>Niveau de vie : </b>Riche</li>
+                    </ul>
                     <p>
                         Fley est né dans un milieu pauvres, il a grandi sans ressource et sans parents de larcins et arnaques. Jusqu'au jour où la police l'attrapa. Il fut enfermé en prison à l'âge de 13 ans destiné à 
                         rester toute sa vie en prison. Mais <a href="#Lyriel">Lyriel Montamin</a>, à l'époque professeur de magie et 3ème grande érudite, alla à la prison pour rencontrer une personne
@@ -714,27 +1048,379 @@
             </section>
             <section id="Nylienn">
             <div>
-                <h3><u>Les Nylienn (<i>à déterminer</i>)</u></h3>
+                <h3><u>Les Nylienn</u></h3>
+                <ul>
+                    <li><b>Race majoritaire : </b><i>à déterminer</i></li>
+                    <li><b>Niveau de vie moyen : </b>Très aisé</li>
+                    <li><b>Rang familiale : </b>3 (récent, anciennement 4)</li>
+                </ul>
                 <div id="Iris2">
                     <b>Iris Nylienn (Montamin de mariage)</b>
+                    <ul>
+                        <li><b>Race : </b><i>à déterminer</i></li>
+                        <li><b>Sexe : </b>Femme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Haut gradé de la <a href="terrahill-orga.html#MiliceC2">milice du conservatoire</a></li>
+                        <li><b>Niveau de vie : </b>Aristocrate (très aisé + aristocrate de <a href="#Pyntle">Pyntle Montamin</a>)</li>
+                    </ul>
                     <p></p>
                 </div>
             </div>
             </section>
             <section id="Galastacie">
             <div>
-                <h3><u>Les Galastacie (Demi-elfe)</u></h3>
+                <h3><u>Les Galastacie</u></h3>
+                <ul>
+                    <li><b>Race majoritaire : </b>Demi-elfe</li>
+                    <li><b>Niveau de vie moyen : </b>Luxueux</li>
+                    <li><b>Rang familiale : </b>3 (récent, anciennement 4)</li>
+                </ul>
                 <div id="Elianis">
                     <b>Elianis Galastacie</b>
+                    <ul>
+                        <li><b>Race : </b>Demi-elfe</li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Barde, chef du <a href="terrahill-orga.html#FrontdeL">Front de Libération</a>, marchand, aventurier</li>
+                        <li><b>Niveau de vie : </b>Riche</li>
+                    </ul>
                     <p></p>
                 </div>
             </div>
             </section>
+            <section id="autres" class="inter">
+                <div>
+                    <h3><u>Les Autres familles (Rangs 4)</u></h3>
+                </div>
+            </section>
+            <section id="Alaric">
+            <div>
+                <h3><u>Alaric Ailes-hautes, dit "la Plume"</u></h3>
+                <ul>
+                    <li><b>Race : </b>Aarakocre</li>
+                    <li><b>Sexe : </b>Femme</li>
+                    <li><b>Etat actuel : </b>Vivant</li>
+                    <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                    <li><b>Fonction(s) : </b>Aventurier archer</li>
+                    <li><b>Niveau de vie : </b>Hors catégorie</li>
+                </ul>
+                <p><!-- Archer de ses morts --></p>
+            </div>
+            </section>
+            <section id="Amai">
+                <style>
+        /* Polices robot : Orbitron (titre) + Share Tech Mono (texte) */
+        @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Share+Tech+Mono&display=swap");
+
+        #Amai {
+            display: block; /* Pour que le script n'affiche pas une erreur parce que c'est vide */
+            /* --- Écran télé cathodique --- */
+            position: relative !important;
+            overflow: hidden !important;
+            background: radial-gradient(ellipse at center, #0b2a12 0%, #04140a 65%, #010603 100%) !important;
+            border: 14px solid #1b1b1b !important;
+            border-radius: 0 !important;
+            padding: 18px 24px !important;
+            box-shadow:
+                0 0 0 3px #3a3a3a,
+                0 10px 30px rgba(0, 0, 0, 0.6),
+                inset 0 0 60px rgba(0, 0, 0, 0.9),
+                inset 0 0 12px rgba(51, 255, 102, 0.25) !important;
+            color: #33ff66 !important;
+            font-family: "Share Tech Mono", "Courier New", Consolas, monospace !important;
+            font-size: 1.05rem !important;
+            line-height: 1.5 !important;
+            text-shadow: 0 0 2px #33ff66, 0 0 8px rgba(51, 255, 102, 0.6) !important;
+            animation: amai-allumage 1.2s ease-out both, amai-scintillement 0.15s infinite !important;
+        }
+
+        /* Lignes de balayage */
+        #Amai::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 2;
+            background: repeating-linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0) 0px,
+                rgba(0, 0, 0, 0) 2px,
+                rgba(0, 0, 0, 0.35) 3px,
+                rgba(0, 0, 0, 0) 4px
+            );
+        }
+
+        /* Bande lumineuse qui descend l'écran */
+        #Amai::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -30%;
+            height: 30%;
+            pointer-events: none;
+            z-index: 3;
+            background: linear-gradient(to bottom, rgba(51, 255, 102, 0), rgba(51, 255, 102, 0.08), rgba(51, 255, 102, 0));
+            animation: amai-balayage 6s linear infinite;
+        }
+
+        #Amai > div {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Titre façon robot qui bug */
+        #Amai h3 {
+            position: relative;
+            margin: 0 0 14px 0 !important;
+            font-family: "Orbitron", "Share Tech Mono", monospace !important;
+            font-size: 1.6rem !important;
+            font-weight: 700 !important;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        #Amai h3::before {
+            content: "> ";
+        }
+        #Amai h3::after {
+            content: "_";
+            animation: amai-curseur 1s steps(1) infinite;
+        }
+        #Amai h3 span {
+            display: inline-block;
+            animation: amai-glitch 4s infinite;
+        }
+
+        /* Liste en mode terminal, les lignes "s'affichent" une par une */
+        #Amai ul {
+            list-style: none !important;
+            padding-left: 8px !important;
+            margin: 0 !important;
+        }
+        #Amai li {
+            opacity: 0;
+            animation: amai-ligne 0.4s steps(4) forwards;
+        }
+        /* Adresses mémoire façon robot devant chaque ligne */
+        #Amai li::before {
+            color: #1fa84a;
+            margin-right: 6px;
+        }
+        #Amai li:nth-child(1)::before { content: "0x0A1F ::"; }
+        #Amai li:nth-child(2)::before { content: "0x0A20 ::"; }
+        #Amai li:nth-child(3)::before { content: "0x0A21 ::"; }
+        #Amai li:nth-child(4)::before { content: "0x0A22 ::"; }
+        #Amai li:nth-child(5)::before { content: "0x0A23 ::"; }
+        #Amai li:nth-child(6)::before { content: "0x0A24 ::"; }
+        #Amai li:nth-child(1) { animation-delay: 1.3s; }
+        #Amai li:nth-child(2) { animation-delay: 1.6s; }
+        #Amai li:nth-child(3) { animation-delay: 1.9s; }
+        #Amai li:nth-child(4) { animation-delay: 2.2s; }
+        #Amai li:nth-child(5) { animation-delay: 2.5s; }
+        #Amai li:nth-child(6) { animation-delay: 2.8s; }
+
+        #Amai b {
+            color: #b8ffc9 !important;
+            font-weight: normal !important;
+        }
+
+        /* "TOUS" en arc-en-ciel qui défile, souligné par un autre dégradé */
+        #Amai .amai-arcenciel {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 3px;
+            background: linear-gradient(90deg, #ff3b3b, #ff9f1a, #ffe81a, #3bff6a, #1ad1ff, #6a5cff, #ff3bd8, #ff3b3b);
+            background-size: 300% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent !important;
+            -webkit-text-fill-color: transparent;
+            text-shadow: none !important;
+            filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.35));
+            animation: amai-arcenciel 3s linear infinite;
+        }
+        #Amai .amai-arcenciel::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 3px;
+            background-color: #ff3b3b;
+            animation: amai-souligne 4s linear infinite;
+        }
+
+        #Amai p {
+            opacity: 0;
+            animation: amai-ligne 0.6s steps(6) 3.1s forwards;
+        }
+
+        /* Transition douce entre page normale et page "Amai" (optionnel, à ajuster) */
+        body {
+            transition: background-color 0.6s ease, color 0.6s ease;
+        }
+
+        /* ====== LA PAGE QUAND AMAI EST À L'ÉCRAN ====== */
+        /* Transition douce */
+        section, nav {
+            transition: background-color 0.6s ease;
+        }
+
+        body.amai-actif {
+            background-image: url(../image/code.png) !important;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        /* Toutes les sections sauf Amai changent de fond */
+        body.amai-actif section:not(#Amai) {
+            background-color: #137432 !important; /* PLACEHOLDER : ta couleur */
+        }
+
+        /* L'index à gauche devient transparent */
+        body.amai-actif #index { /* PLACEHOLDER : remplace #index par le vrai sélecteur */
+            background: #137432b1 !important;
+            background-color: #137432b1 !important;
+        }
+
+        @keyframes amai-allumage {
+            0%   { transform: scale(1, 0.005); filter: brightness(6); }
+            40%  { transform: scale(1, 0.005); filter: brightness(6); }
+            70%  { transform: scale(1, 1.05); filter: brightness(2); }
+            100% { transform: scale(1, 1); filter: brightness(1); }
+        }
+        @keyframes amai-scintillement {
+            0%   { opacity: 0.97; }
+            50%  { opacity: 1; }
+            100% { opacity: 0.98; }
+        }
+        @keyframes amai-balayage {
+            0%   { top: -30%; }
+            100% { top: 100%; }
+        }
+        @keyframes amai-arcenciel {
+            from { background-position: 0% 50%; }
+            to   { background-position: 300% 50%; }
+        }
+        /* Soulignement d'une seule couleur qui change */
+        @keyframes amai-souligne {
+            0%     { background-color: #ff3b3b; }
+            16.6%  { background-color: #ff9f1a; }
+            33.3%  { background-color: #ffe81a; }
+            50%    { background-color: #3bff6a; }
+            66.6%  { background-color: #1ad1ff; }
+            83.3%  { background-color: #ff3bd8; }
+            100%   { background-color: #ff3b3b; }
+        }
+        @keyframes amai-curseur {
+            0%   { opacity: 1; }
+            50%  { opacity: 0; }
+        }
+        @keyframes amai-ligne {
+            from { opacity: 0; transform: translateX(-6px); }
+            to   { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes amai-glitch {
+            0%, 90%, 100% { transform: translate(0); text-shadow: 0 0 2px #33ff66, 0 0 8px rgba(51, 255, 102, 0.6); }
+            91% { transform: translate(-3px, 1px) skewX(12deg); text-shadow: 3px 0 #ff3366, -3px 0 #33ccff; }
+            93% { transform: translate(3px, -1px) skewX(-8deg); text-shadow: -3px 0 #ff3366, 3px 0 #33ccff; }
+            95% { transform: translate(-1px, 0); opacity: 0.6; }
+            97% { transform: translate(2px, 1px); opacity: 1; }
+        }
+
+        /* Pas d'animations pour ceux qui les désactivent */
+        @media (prefers-reduced-motion: reduce) {
+            #Amai, #Amai::after, #Amai h3::after, #Amai h3 span, #Amai li, #Amai p,
+            #Amai .amai-arcenciel, #Amai .amai-arcenciel::after {
+                animation: none !important;
+                opacity: 1 !important;
+            }
+        }
+                </style>
+                <div>
+                    <h3><span>Amai.0.0.1-Prototype</span></h3>
+                    <ul>
+                        <li><b>Race : </b>Artificiel</li>
+                        <li><b>Sexe : </b><span class="amai-arcenciel">TOUS</span></li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><!-- à compléter --></li>
+                        <li><b>Fonction(s) : </b>Aventurier</li>
+                        <li><b>Niveau de vie : </b>Hors catégorie</li>
+                    </ul>
+                    <p>
+                        <!-- à compléter -->
+                    </p>
+                </div>
+                <script>
+(function () {
+    const section = document.getElementById("Amai");
+    if (!section) return;
+
+    const nav = document.querySelector("nav");
+    const CLASSE = "amai-actif";
+
+function quandAmaiApparait() {
+    document.body.classList.add(CLASSE);
+    section.classList.add(CLASSE);
+    if (nav) nav.classList.add(CLASSE);
+}
+
+function quandAmaiPart() {
+    document.body.classList.remove(CLASSE);
+    section.classList.add(CLASSE);
+    if (nav) nav.classList.remove(CLASSE);
+}
+
+    const observateur = new IntersectionObserver(
+        (entrees) => {
+            entrees.forEach((entree) => {
+                if (entree.isIntersecting) {
+                    quandAmaiApparait();
+                } else {
+                    quandAmaiPart();
+                }
+            });
+        },
+        { threshold: 0.3 } // 30 % de la section visible = "apparue"
+    );
+
+    observateur.observe(section);
+})();
+                </script>
+            </section>
+            <section id="Balague">
+            <div>
+                <h3>Balague Rougécailles, dit "le Déchu"</h3>
+                <ul>
+                    <li><b>Race : </b>Dènnion/Drakéide</li>
+                    <li><b>Sexe : </b>Homme</li>
+                    <li><b>Etat actuel : </b>Vivant</li>
+                    <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                    <li><b>Fonction(s) : </b>Aventurier guerrier</li>
+                    <li><b>Niveau de vie : </b>Hors catégorie</li>
+                </ul>
+                <p></p>
+            </div>
+            </section>
             <section id="Blanc-pain">
             <div>
-                <h3><u>Les Blanc-pain (Demi-elfe)</u></h3>
+                <h3><u>Les Blanc-pain</u></h3>
+                <ul>
+                    <li><b>Race majoritaire : </b>Demi-elfe</li>
+                    <li><b>Niveau de vie moyen : </b>Aisé</li>
+                </ul>
                 <div id="Zeleth">
                     <b>Zeleth Blanc-pain (<a href="#Terrkion">Terrkion Demetrian</a>)</b>
+                    <ul>
+                        <li><b>Race : </b>Demi-elfe</li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Mort</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Marchand, aventurier</li>
+                        <li><b>Niveau de vie : </b>Riche</li>
+                    </ul>
                     <p>Zeleth est né dans la forêt des druides dans le village des druides. Il n'a jamais connu ses parents mais a été adopté par un couple, son père adoptif est le chef du village. 
                         Il est devenu commerçant et a fini par acheter la forêt des druides pour l'exploiter sans l'accord de ceux-ci. Il a été banni pour cela et a donc décidé de monter son commerce 
                         dans différents lieu. Son commerce est dans un demi-plan, des portes sont situés dans toutes les capitale de Terrahill pour y accéder et il possède même une porte itinérairantes 
@@ -748,109 +1434,164 @@
                 </div>
             </div>
             </section>
-            <section id="Vildey">
-            <div>
-                <h3><u>Les Vildey (Humain)</u></h3>
-                <div id="Sophia">
-                    <b>Sophia Vildey</b>
-                    <p>La mère de <a href="#Hugo">Hugo Vildey</a></p>
-                </div>
-                <div id="Sébastt">
-                    <b>Sébastt Vildey</b>
-                    <p>Le père de <a href="#Hugo">Hugo Vildey</a></p>
-                </div>
-                <div id="Hugo">
-                    <b>Hugo Vildey</b>
-                    <p>Hugo Vildey est né dans le petit village de <a href="terrahill-kiir-terrahill.html#Honne">Honne</a>. Il a grandi élevé par ses deux parents (<a href="#Sophia">Sophia</a> et <a href="#Sébastt">Sébastt</a>). Une fois adulte, il est partie du village pour fonder sa société de création de poupées vivantes sexuelles. Son entreprise est basée dans la ville royale du Palann. Elle se nomme "<a href="terrahill-kiir-terrahill.html#Li'Tiumm">Li'Tiumm</a>". Hugo Vildey est notamment marié à <a href="#Célia">Célia Chant-de-soie</a>.</p>
-                </div>
-            </div>
-            </section>
-            <section id="autres" class="inter">
-                <div>
-                    <h3><u>Les Autres familles (Rangs 4)</u></h3>
-                </div>
-            </section>
-            <section id="Alaric">
-            <div>
-                <h3><u>Alaric Ailes-hautes, dit "le Preux" (Aarakocre)</u></h3>
-                <p><!-- Archer de ses morts --></p>
-            </div>
-            </section>
-            <section id="Amai">
-                <style>
-                    #Amai {
-                        display: none;
-                    }
-                </style>
-                <div>
-                    <h3>Amai.0.0.1-Prototype (Artificel)</h3>
-                    <p></p>
-                </div>
-            </section>
-            <section id="Balague">
-            <div>
-                <h3>Balague Rougécailles, dit "le Déchu" (Dènnion/Drakéide)</h3>
-                <p></p>
-            </div>
-            </section>
             <section id="Brasdor">
             <div>
-                <h3>Brasdor Tidulme (Humain)</h3>
+                <h3>Brasdor Tidulme</h3>
+                <ul>
+                    <li><b>Race : </b>Humain</li>
+                    <li><b>Sexe : </b>Homme</li>
+                    <li><b>Etat actuel : </b>Vivant</li>
+                    <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                    <li><b>Fonction(s) : </b>Soldat</li>
+                    <li><b>Niveau de vie : </b>Modeste</li>
+                </ul>
                 <p></p>
             </div>
             </section>
             <section id="Célia">
             <div>
-                <h3>Célia Chant-de-soie (Humain)</h3>
+                <h3>Célia Chant-de-soie</h3>
+                <ul>
+                    <li><b>Race : </b>Humain</li>
+                    <li><b>Sexe : </b>Femme</li>
+                    <li><b>Etat actuel : </b>Vivant</li>
+                    <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                    <li><b>Fonction(s) : </b>Secrétaire</li>
+                    <li><b>Niveau de vie : </b>Riche (luxueux + riche de <a href="#Hugo">Hugo Vildey</a>)</li>
+                </ul>
                 <p>Célia Chant-de-soie est la femme de <a href="#Hugo">Hugo Vildey</a> et sa secrétaire a <a href="terrahill-kiir-terrahill.html#Li'Tiumm">Li'Tiumm</a>.</p>
+            </div>
+            </section>
+            <section id="De_Ehrn">
+            <div>
+                <h3><u>Les De Ehrn</u></h3>
+                <ul>
+                    <li><b>Race majoritaire : </b>Humain</li>
+                    <li><b>Niveau de vie moyen : </b>Très aisé</li>
+                </ul>
+                <div id="Lucia">
+                    <b>Lucia De Ehrn</b>
+                    <ul>
+                        <li><b>Race : </b>Humain</li>
+                        <li><b>Sexe : </b>Femme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Seigneur de <a href="terrahill-kiir-terrahill.html#Ehrn">Ehrn</a></li>
+                        <li><b>Niveau de vie : </b>Très aisé</li>
+                    </ul>
+                    <p></p>
+                </div>
             </div>
             </section>
             <section id="Ilian">
             <div>
-                <h3>Ilian Eloi, dit "l'Occultiste" (<i>à déterminer</i>)</h3>
+                <h3>Ilian Eloi, dit "l'Occultiste"</h3>
+                <ul>
+                    <li><b>Race : </b><i>à déterminer</i></li>
+                    <li><b>Sexe : </b>Homme</li>
+                    <li><b>Etat actuel : </b>Vivant</li>
+                    <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                    <li><b>Fonction(s) : </b>Dirigeant de <a href="terrahill-kiir-terrahill.html#Lihènn">Lihènn</a></li>
+                    <li><b>Niveau de vie : </b>Riche</li>
+                </ul>
                 <p></p>
             </div>
             </section>
             <section id="Karthes">
             <div>
-                <h3>Karthes Bartan, dit "le Nécromancien" (<i>à déterminer</i>)</h3>
+                <h3>Karthes Bartan, dit "le Nécromancien"</h3>
+                <ul>
+                    <li><b>Race : </b>Liche</li>
+                    <li><b>Sexe : </b>Homme</li>
+                    <li><b>Etat actuel : </b>Plus ou moins Vivant</li>
+                    <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                    <li><b>Fonction(s) : </b>Dirigeant de <a href="terrahill-kiir-terrahill.html#Lihènn">Lihènn</a></li>
+                    <li><b>Niveau de vie : </b>Riche</li>
+                </ul>
                 <p></p>
             </div>
             </section>
             <section id="Nemeïa">
             <div>
-                <h3>Nemeïa Anagénnesis (Tieffelin)</h3>
-                <p>
-                </p>
+                <h3>Nemeïa Anagénnesis</h3>
+                <ul>
+                    <li><b>Race : </b>Tieffelin</li>
+                    <li><b>Sexe : </b>Femme</li>
+                    <li><b>Etat actuel : </b>Vivant</li>
+                    <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                    <li><b>Fonction(s) : </b>Aventurier</li>
+                    <li><b>Niveau de vie : </b>Hors catégorie</li>
+                </ul>
+                <p></p>
             </div>
             </section>
             <section id="Nitsu">
             <div>
-                <h3>Nitsu / Barbare (Dènnion/Drakéide)</h3>
+                <h3>Nitsu / Barbare</h3>
+                <ul>
+                    <li><b>Race : </b>Dènnion/Drakéide</li>
+                    <li><b>Sexe : </b>Homme</li>
+                    <li><b>Etat actuel : </b>Vivant</li>
+                    <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                    <li><b>Fonction(s) : </b>Aventurier</li>
+                    <li><b>Niveau de vie : </b>Hors catégorie</li>
+                </ul>
                 <p>Nitsu a été adopté par un papi qui lui a appris à se battre, après la disparition de ses parents. Ce même papi, lui a enseigné la maitrise de la foudre (seulement lorsqu'il dort). Nitsu subit des pertes de mémoires régulières. Nitsu a pris son envol en devenant guerrier solitaire, il a combattu nombre de monstres et créatures épiques. Il est arrivé dans une ville, le conservatoire de <a href="terrahill-kiir-terrahill.html#Mérehatt">Mérehatt</a> où un homme lui a proposé un bout de viande s'il réussissait l'épreuve pour entrer dans la guilde. Il a eu son bout de viande et a rejoins un groupe de 7 aventuriers. Il apprécie notamment la présence féminine proche de lui (Surtout de <a href="#Célia">Célia Chant-de-soie</a>).</p>
             </div>
             </section>
             <section id="Omniscient">
             <div>
-                <h3>L'Omniscient (Dènnion/Drakéide)</h3>
+                <h3>L'Omniscient</h3>
+                <ul>
+                    <li><b>Race : </b>inconnue</li>
+                    <li><b>Sexe : </b>inconnu</li>
+                    <li><b>Etat actuel : </b>Vivant</li>
+                    <li><b>Date de naissance : </b>inconnue</li>
+                    <li><b>Fonction(s) : </b>inconnue</li>
+                    <li><b>Niveau de vie : </b>inconnue</li>
+                </ul>
                 <p>Aucune information sur l'Omniscient ne sont présentes dans les Archives Publiques du Grand Conservatoire.</p>
             </div>
             </section>
             <section id="Nerrion">
             <div>
-                <h3>L'Homme en Noir (Shadar-kaï)</h3>
+                <h3>L'Homme en Noir</h3>
+                <ul>
+                    <li><b>Race : </b>Shadar-kaï</li>
+                    <li><b>Sexe : </b>Homme</li>
+                    <li><b>Etat actuel : </b>Vivant</li>
+                    <li><b>Date de naissance : </b>inconnue</li>
+                    <li><b>Fonction(s) : </b>Pirate, chef de la Sombre Fratrie (une branche de la <a href="terrahill-orga.html#Confrerie_Noire">Confrerie Noire</a>)</li>
+                    <li><b>Niveau de vie : </b>Très aisé</li>
+                </ul>
                 <p></p>
             </div>
             </section>
             <section id="Neytarr">
             <div>
-                <h3>Neytarr, dit "le Brigand" (Gobelin)</h3>
+                <h3>Neytarr, dit "le Brigand"</h3>
+                <ul>
+                    <li><b>Race : </b>Gobelin</li>
+                    <li><b>Sexe : </b>Homme</li>
+                    <li><b>Etat actuel : </b>Vivant</li>
+                    <li><b>Date de naissance : </b>inconnue</li>
+                    <li><b>Fonction(s) : </b>Brigand, escroc et voleur</li>
+                    <li><b>Niveau de vie : </b>Hors catégorie</li>
+                </ul>
                 <p></p>
             </div>
             </section>
             <section id="Gremnyr">
             <div>
-                <h3>Gremnyr Arorchor, dit "le Paisible" (Nain)</h3>
+                <h3>Gremnyr Arorchor, dit "le Paisible"</h3>
+                <ul>
+                    <li><b>Race : </b>Nain</li>
+                    <li><b>Sexe : </b>Homme</li>
+                    <li><b>Etat actuel : </b>Vivant</li>
+                    <li><b>Date de naissance : </b>1857</li>
+                    <li><b>Fonction(s) : </b>3ème Grand érudit du <a href="terrahill-kiir-terrahill.html#Grand_conservatoire">Grand conservatoire</a></li>
+                    <li><b>Niveau de vie : </b>Luxueux</li>
+                </ul>
                 <p style="text-indent: 0px;">
                     C'est dans les champs de Jade, de ces sombres batailles,
                     <br>Aux morts des camarades, dans la boue et la paille.
@@ -867,25 +1608,102 @@
             </section>
             <section id="Oswald">
             <div>
-                <h3>Oswald (Squelette)</h3>
+                <h3>Oswald</h3>
+                <ul>
+                    <li><b>Race : </b>Squelette, anciennement humain</li>
+                    <li><b>Sexe : </b>Homme</li>
+                    <li><b>Etat actuel : </b>Plus ou moins mort</li>
+                    <li><b>Date de naissance : </b>inconnue</li>
+                    <li><b>Fonction(s) : </b>Humoriste, ancien bûcheron</li>
+                    <li><b>Niveau de vie : </b>Hors catégorie</li>
+                </ul>
                 <p></p>
             </div>
             </section>
             <section id="Ologma">
             <div>
-                <h3>Ologma (Changelin)</h3>
+                <h3>Ologma</h3>
+                <ul>
+                    <li><b>Race : </b>inconnue</li>
+                    <li><b>Sexe : </b>inconnu</li>
+                    <li><b>Etat actuel : </b>inconnue</li>
+                    <li><b>Date de naissance : </b>inconnue</li>
+                    <li><b>Fonction(s) : </b>Porte-couronne de <a href="terrahill-pantheon.html#Soleildenosvies">M.Lemoine</a></li>
+                    <li><b>Niveau de vie : </b>Hors catégorie</li>
+                </ul>
                 <p></p>
             </div>
             </section>
             <section id="Sepulkris">
             <div>
-                <h3>Sepulkris, le Seigneur Pâle (Revenant, anciennement <i>à déterminer</i>)</h3>
+                <h3>Sepulkris, le Seigneur Pâle</h3>
+                <ul>
+                    <li><b>Race : </b>Revenant, anciennement Drow</li>
+                    <li><b>Sexe : </b>Homme</li>
+                    <li><b>Etat actuel : </b>Plus ou moins Vivant</li>
+                    <li><b>Date de naissance : </b>1705 ap.R.</li>
+                    <li><b>Fonction(s) : </b>Capitaine de la garde de <a href="terrahill-terratarcyss.html#Caldenmoor">Caldenmoor</a>, aventurier, tueur à gage, ancien seigneur de domaine d'épouvante.</li>
+                    <li><b>Niveau de vie : </b>Bien aisé</li>
+                </ul>
                 <p></p>
+            </div>
+            </section>
+            <section id="Vildey">
+            <div>
+                <h3><u>Les Vildey</u></h3>
+                <ul>
+                    <li><b>Race majoritaire : </b>Humain</li>
+                    <li><b>Niveau de vie moyen : </b>Bien aisé</li>
+                </ul>
+                <div id="Sophia">
+                    <b>Sophia Vildey</b>
+                    <ul>
+                        <li><b>Race : </b>Humain</li>
+                        <li><b>Sexe : </b>Femme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Infirmière</li>
+                        <li><b>Niveau de vie : </b>Modeste</li>
+                    </ul>
+                    <p>La mère de <a href="#Hugo">Hugo Vildey</a></p>
+                </div>
+                <div id="Sébastt">
+                    <b>Sébastt Vildey</b>
+                    <ul>
+                        <li><b>Race : </b>Humain</li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Boûcher</li>
+                        <li><b>Niveau de vie : </b>Modeste</li>
+                    </ul>
+                    <p>Le père de <a href="#Hugo">Hugo Vildey</a></p>
+                </div>
+                <div id="Hugo">
+                    <b>Hugo Vildey</b>
+                    <ul>
+                        <li><b>Race : </b>Humain</li>
+                        <li><b>Sexe : </b>Homme</li>
+                        <li><b>Etat actuel : </b>Vivant</li>
+                        <li><b>Date de naissance : </b><i>à déterminer</i></li>
+                        <li><b>Fonction(s) : </b>Marchand</li>
+                        <li><b>Niveau de vie : </b>Riche</li>
+                    </ul>
+                    <p>Hugo Vildey est né dans le petit village de <a href="terrahill-kiir-terrahill.html#Honne">Honne</a>. Il a grandi élevé par ses deux parents (<a href="#Sophia">Sophia</a> et <a href="#Sébastt">Sébastt</a>). Une fois adulte, il est partie du village pour fonder sa société de création de poupées vivantes sexuelles. Son entreprise est basée dans la ville royale du Palann. Elle se nomme "<a href="terrahill-kiir-terrahill.html#Li'Tiumm">Li'Tiumm</a>". Hugo Vildey est notamment marié à <a href="#Célia">Célia Chant-de-soie</a>.</p>
+                </div>
             </div>
             </section>
             <section id="Yann">
             <div>
-                <h3>Yann Sorel--Pailhes, dit "Le Pégu" (Humain)</h3>
+                <h3>Yann Sorel--Pailhes, dit "Le Pégu"</h3>
+                <ul>
+                    <li><b>Race : </b>Humain</li>
+                    <li><b>Sexe : </b>Homme</li>
+                    <li><b>Etat actuel : </b>Vivant</li>
+                    <li><b>Date de naissance : </b>1976 ap.R.</li>
+                    <li><b>Fonction(s) : </b>Agriculteur</li>
+                    <li><b>Niveau de vie : </b>Modeste</li>
+                </ul>
                 <p>Allaure, euuuuh, l'aut' la. Y s'opell Yann é pi tou ski fè den çah vi c r'macé lè bouz dè vashe. Ca fame, l'aut groce brrijite, èl lo tronpé ovaic unne vashe. Ca fille, lo Manon, è l'é unne PUTE, mè méme son pair y a toushei le cong de c mor, ill là bian bz cte salope. y vis a <a href="terrahill-kiir-terrahill.html#Honne">Aûnnes</a>.
                     <br>Une fois traduit, cela signifie : "Alors, euuuuh, l'autre là. Il s'apelle Yann et puis tout ce qu'il fait dans sa vie c'est ramasser les bouses des vaches. Sa femme, l'autre grosse Brigitte, elle l'a trompé avec une vache. Sa fille, la Manon, elle est une "gentils dame très respectueuse qui fait des massages aux monsieurs", mais même son père, il l'a touché le con de ses morts, il l'a bien "rendu heureuse" cette "fille fort sympathique". Il vit à <a href="terrahill-kiir-terrahill.html#Honne">Honne</a>."
                 </p>
@@ -893,7 +1711,15 @@
             </section>
             <section id="Yann2">
             <div>
-                <h3>Yann Damakos, dit "Le Tourmenté" (Tieffelin, anciennement Humain avant mutation)</h3>
+                <h3>Yann Damakos, dit "Le Tourmenté"</h3>
+                <ul>
+                    <li><b>Race : </b>Tieffelin, anciennement Humain avant mutation</li>
+                    <li><b>Sexe : </b>Homme</li>
+                    <li><b>Etat actuel : </b>Vivant</li>
+                    <li><b>Date de naissance : </b>1989 ap.R.</li>
+                    <li><b>Fonction(s) : </b>Aventurier, ancien soldat occasionel</li>
+                    <li><b>Niveau de vie : </b>Hors catégorie</li>
+                </ul>
                 <p>
                     Je me suis permis de remplacer le texte écrit sur moi à l'origine pour y laisser ma version. Ainsi, vous saurez réellement ce que j'ai vécu.
                 </p>
@@ -986,7 +1812,15 @@
             </section>
             <section id="Zoé">
             <div>
-                <h3>Zoé Doigt d'Orage (Humain)</h3>
+                <h3>Zoé Doigt d'Orage</h3>
+                    <ul>
+                        <li><b>Race : </b>Humain</li>
+                        <li><b>Sexe : </b>Femme</li>
+                        <li><b>Etat actuel : </b>Mort</li>
+                        <li><b>Date de naissance : </b>2001 ap.R.</li>
+                        <li><b>Fonction(s) : </b>Anciennement 10ème érudit du <a href="terrahill-kiir-terrahill.html#Grand_conservatoire">Grand conservatoire</a></li>
+                        <li><b>Niveau de vie : </b>Très aisé</li>
+                    </ul>
                 <p></p>
             </div>
             </section>
