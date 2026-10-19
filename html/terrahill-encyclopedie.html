@@ -2,10 +2,14 @@
 <html lang="fr" style="display: block;background-image: url(../image/Taverne.jpg);background-attachment: fixed;background-size: cover;">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="../image/Taverne.png">
     <title>Encyclopédie de Terrahill</title>
     <style>
+        section {
+            display: flex;
+            flex-direction: row;
+        }
         a {
             color: white;
         }
@@ -70,6 +74,14 @@
         .nc {
             background-color: red;
         }
+        .espace {
+            flex: 1;
+        }
+        @media (max-width: 600px) {
+            section {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
@@ -78,35 +90,35 @@
         <p>D'ici vous pouvez accéder à toutes (ou presque toutes) les informations sur le monde passionant, vaste et regorgeant d'histoires de Terrahill.</p>
     </header>
     <main style="background-color: rgba(108, 58, 0, 0.25);margin: 20px;">
-    <section style="display: flex;">
+    <section>
         <a href="terrahill-personnages.html" class="button">Les Personnages</a>
         <a href="terrahill-orga.html" class="button">Les Organisations</a>
         <a href="terrahill-exclu.html" class="exclu button">Les Exclusivités</a>
     </section>
-    <section style="display: flex;">
-        <div style="flex: 1;"></div>
+    <section>
+        <div class="espace"></div>
         <div style="flex: 1;background-color: rgb(255, 162, 0);border-radius: 5px;"><p style="text-align: center;">Les Zones géographiques (Continents, îles et archipels)</p></div>
-        <div style="flex: 1;"></div>
+        <div class="espace"></div>
     </section>
-    <section style="display: flex;">
+    <section>
     <a href="terrahill-kiir-terrahill.html" class="button">Kiir-Terrahill / Le Continent</a>
     <a href="terrahill-saphirs.html" class="saphirs button" id="saphirs">L'Archipel aux Saphirs / Les Saphirs</a>
     <a href="terrahill-terratarcyss.html" class="button">TerraTarcyss</a>
     <a href="terrahill-terra-uomoriccio.html" class="button">Terra-Uomoriccio</a>
     </section>
-    <section style="display: flex;">
+    <section>
         <a href="terrahill-terratshaiid.html" class="button">TerraTshaiid</a>
         <a href="terrahill-terracaltaadenn.html" class="button">TerraCaltaaDènn</a>
         <a href="terrahill-terraignitiann.html" class="button">TerraIgnitiann / Les Terres Sauvages</a>
         <a href="terrahill-terratarrak.html" class="button">TerraTarrak / Les Jumeaux</a>
     </section>
-    <section style="display: flex;">
+    <section>
         <a href="terrahill-shaii-terra.html" class="button">Shaii-Terra</a>
         <a href="terrahill-terratildaqq.html" class="button">TerraIldaqq</a>
         <a href="terrahill-terraeletiarrk.html" class="button eletiarrk">TerraEletiarrk</a>
         <a href="terrahill-terrakadorr.html" class="button">TerraKadorr</a>
     </section>
-    <section style="display: flex;">
+    <section>
         <a href="terrahill-niveaumer.html" class="button">Niveau de Mer</a>
         <a href="terrahill-audessus.html" class="button">L'Au-dessus ciel</a>
         <a href="terrahill-profondeur.html" class="button">Les Profondeurs</a>
@@ -114,12 +126,12 @@
     </section>
     </main>
     <main style="background-color: rgba(108, 58, 0, 0.25);margin: 20px;">
-    <section style="display: flex;">
-        <div style="flex: 1;"></div>
+    <section>
+        <div class="espace"></div>
         <div style="flex: 1;background-color: rgb(255, 162, 0);border-radius: 5px;"><p style="text-align: center;">Les autres plans d'existence</p></div>
-        <div style="flex: 1;"></div>
+        <div class="espace"></div>
     </section>
-    <section style="display: flex;">
+    <section>
         <a href="terrahill-kiirbold.html" class="button">Kiirbold</a>
         <a href="terrahill-vhirdemm.html" class="button">Vhirdèmm</a>
         <div style="flex: 2;"></div>
