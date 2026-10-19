@@ -2,13 +2,20 @@
 <html lang="fr" style="display: block;background-image: url(image/Taverne.jpg);background-attachment: fixed;background-size: cover;">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Vous voici dans les Archives officielles de Terrahill, ici se trouvent toutes les informations sur le monde passionant, vaste et regorgeant d'histoires de Terrahill." />
     <meta name="google-site-verification" content="UqeueGMycDBZRxXyDre0UdsPJeUWfz9M4GYl7fmyxbU" />
     <link rel="icon" type="image/png" href="image/Taverne.png">
     <title>Archives de Terrahill</title>
     <script src="js/JS.js"></script>
     <style>
+        main {
+            display: flex;
+            flex-direction: row;
+        }
+        footer {
+            display: flex;
+        }
         a {
             color: white;
         }
@@ -69,6 +76,18 @@
             #faq {
                 display: none !important;
             }
+            main {
+                flex-direction: column;
+            }
+            .button {
+                padding: 20px;
+            }
+            footer {
+                display: none;
+            }
+            .patch-notes {
+                display: none !important;
+            }
         }
     </style>
 </head>
@@ -77,13 +96,13 @@
         <h1><u>Archives publ<a href="html/terrahill-pantheon.html#Khalamite" style="color: white;" id="i">i</a>ques de Terrahill</u></h1>
         <p>D'ici vous pouvez accéder à toutes (ou presque toutes) les informations sur le monde passionant, vaste et regorgeant d'histoires de Terrahill.</p>
     </header>
-    <main style="display: flex;">
+    <main>
     <a href="html/terrahill-encyclopedie.html" class="button">L'encyclopédie</a>
     <a href="html/terrahill-pantheon.html" class="button">Le Panthéon</a>
     <a href="html/terrahill-histoire.html" class="button">L'Histoire</a>
     <a href="html/terrahill-saphirs.html" class="button1 button banger" id="saphirs">L'Archipel aux Saphirs</a>
     </main>
-    <footer style="display: flex;">
+    <footer>
         <div class="description">
             <p>L'Encyclopédie d'un vaste monde décrit toute l'histoire des lieux, personnages et organisations connus du monde de Terrahill, de l'autre monde et des plans associés.</p>
         </div>
@@ -121,7 +140,7 @@
         </div>
     </section>
     <section>
-        <p style="position: fixed;bottom: 70px;left: 33.5%;background-color: rgba(108, 58, 0, 0.5);color: white;max-width: 30%;">Date actuelle des Archives dans Terrahill : 19 Mars 831 de l'ère des civilisations</p>
+        <p style="position: fixed;bottom: 70px;left: 33.5%;background-color: rgba(108, 58, 0, 0.5);color: white;max-width: 30%;">Date actuelle des Archives dans Terrahill : 19 Mars 2026 ap.R.</p>
         <h6 style="background-color: rgb(108, 58, 0);color: white; position: fixed; left: 1px;bottom: 1px;">Dernière mise à jour : <span id="last-update">Chargement...</span></h6>
         <h6 style="position: fixed;background-color: rgb(108, 58, 0);bottom: 1px;left: 28%;color: white;text-align: center;">© 2026 Yann Sorel--Pailhes - Terrahill. Tous droits réservés. <a href="html/legal.html">Mentions légales</a>, <a href="LICENSE.md">Licence</a><br>Réalisé par Yann Sorel--Pailhes avec la participation de Mathéo Gaignard, <a href="html/terrahill-encyclopedie.html#Hugo">Hugo Vildey</a>, <a href="html/terrahill-encyclopedie.html#Thomas">Thomas Olivier</a> et Evana Monnier.</h6>
         <a href="html/ghdfytie.html" class="no" style="color: rgba(108, 58, 0, 1);text-decoration: none;background-color: white;position: fixed;bottom: 10%;left: 46%; display: None;">Les Secrets</a>
