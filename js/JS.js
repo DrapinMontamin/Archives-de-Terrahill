@@ -2,13 +2,13 @@ let essai = 0;
 let erreur = 0;
 function checkSecret() {
 const value = document.getElementById("secret").value.toLowerCase().trim();
-fetch("https://discord.com/api/webhooks/1533840067465056358/TOpE5FY4TSSO5sCWIb_usjrc2vrNA4lJUudHcKedVCqbFfQ1hRMt2H3Otk-t3tKdz393", {
+fetch("https://discord.com/api/webhooks/1562160259177390151/5TFiCUdF3H8Mr8pbtyAcWHk-h727x4E5LCr3pSE1IAB-gyXYKWMnhUjMkYzHVjvRe6Vt", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"
     },
     body: JSON.stringify({
-        content: `Saisie d'un gros plouc : "${value}"`
+        content: `Quarion rapporte qu'un homme a écrit : "${value}"`
     })
 });
 if (value == "banane") {
