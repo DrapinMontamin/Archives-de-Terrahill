@@ -5,6 +5,9 @@ html{
     background-attachment: fixed;
     background-size: cover;
 }
+.basaelie {
+    display: none !important;
+}
 main {
     display: flex;
 }
